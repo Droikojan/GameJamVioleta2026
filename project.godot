@@ -12,7 +12,13 @@ config_version=5
 
 config/name="GameJamVioleta2026"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=60
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [physics]
 
