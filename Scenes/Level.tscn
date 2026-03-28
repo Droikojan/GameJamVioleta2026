@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://2fm06glygmkg" path="res://Scripts/Level.gd" id="1_vsvp5"]
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
+[ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
 
 [node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3") groups=["RoomController"]]
 layout_mode = 3
@@ -189,3 +190,9 @@ offset_bottom = 608.0
 rotation = -3.1415927
 scale = Vector2(4, 4)
 next_room = 2
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1296551554]
+stream = ExtResource("4_xylue")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
