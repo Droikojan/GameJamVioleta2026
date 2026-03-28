@@ -52,7 +52,7 @@ offset_right = 955.0
 offset_bottom = 535.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.19607843)
+color = Color(0, 0, 0, 0.54509807)
 
 [node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Settings" unique_id=184160442]
 layout_mode = 0
