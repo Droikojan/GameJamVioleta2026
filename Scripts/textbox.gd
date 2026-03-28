@@ -38,6 +38,8 @@ func _load_dialog(dialogCode: String) -> void:
 		load_texts("res://Diagolos/dialogos.json")
 	if dialogCode == "dialogo_fallo":
 		load_texts("res://Diagolos/dialogo_fallo.json")
+	if dialogCode == "dialogo_game_over":
+		load_texts("res://Diagolos/dialogo_game_over.json")
 
 	current_index = 0
 	show_next_textbox()

@@ -21,3 +21,6 @@ func _quit_border():
 
 func _close_screen():
 	animation_player.play("close")
+	TextBox._load_dialog("dialogo_game_over")
+	await TextBox.finish_textbox
+	TransitionController.load_level("uid://5ok4y36qvqnn")
