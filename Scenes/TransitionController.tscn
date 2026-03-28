@@ -54,7 +54,7 @@ _data = {
 &"Transition": SubResource("Animation_66ino")
 }
 
-[node name="TransitionController" type="CanvasLayer" unique_id=169170620]
+[node name="TransitionController" type="CanvasLayer" unique_id=169170620 groups=["TransitionController"]]
 script = ExtResource("1_a77ny")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1729066573]
