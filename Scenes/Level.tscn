@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://cow3mdict3hp4"]
+
+[ext_resource type="Script" uid="uid://2fm06glygmkg" path="res://Scripts/Level.gd" id="1_vsvp5"]
+[ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
+[ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
+
+[node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3") groups=["RoomController"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vsvp5")
+room1 = NodePath("Room1")
+room2 = NodePath("Room2")
+room3 = NodePath("Room3")
+
+[node name="Room1" type="Control" parent="." unique_id=1379833664]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Room1" unique_id=864988848]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.67315584, 0.8321033, 0.9947695, 1)
+
+[node name="Imagen" type="TextureRect" parent="Room1" unique_id=1237949297]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImageButton" parent="Room1" unique_id=2079899341 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 360.0
+offset_right = 622.0
+offset_bottom = 554.0
+
+[node name="ImageButton2" parent="Room1" unique_id=935021657 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 1143.0
+offset_top = 467.0
+offset_right = 1378.0
+offset_bottom = 702.0
+puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
+
+[node name="ChangeRoomButtons" type="Control" parent="Room1" unique_id=1215421090]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ArrowButton" parent="Room1/ChangeRoomButtons" unique_id=913815745 instance=ExtResource("3_8rbpu")]
+layout_mode = 0
+offset_left = 1792.0
+offset_top = 562.0
+offset_right = 1832.0
+offset_bottom = 602.0
+scale = Vector2(4, 4)
+next_room = 2
+
+[node name="Room2" type="Control" parent="." unique_id=1734503929]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Room2" unique_id=2077187174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.860113, 0.83369833, 0.41733164, 1)
+
+[node name="Imagen" type="TextureRect" parent="Room2" unique_id=1378268291]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImageButton" parent="Room2" unique_id=1446513524 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 169.0
+offset_right = 801.0
+offset_bottom = 363.0
+
+[node name="ImageButton2" parent="Room2" unique_id=1112729211 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 524.0
+offset_right = 895.0
+offset_bottom = 759.0
+puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
+
+[node name="ChangeRoomButtons" type="Control" parent="Room2" unique_id=278709624]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ArrowButton" parent="Room2/ChangeRoomButtons" unique_id=780824714 instance=ExtResource("3_8rbpu")]
+layout_mode = 0
+offset_left = 1792.0
+offset_top = 562.0
+offset_right = 1832.0
+offset_bottom = 602.0
+scale = Vector2(4, 4)
+next_room = 3
+
+[node name="ArrowButton2" parent="Room2/ChangeRoomButtons" unique_id=973946269 instance=ExtResource("3_8rbpu")]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 568.0
+offset_right = 154.0
+offset_bottom = 608.0
+rotation = -3.1415927
+scale = Vector2(4, 4)
+
+[node name="Room3" type="Control" parent="." unique_id=1686844364]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Room3" unique_id=1664983157]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.36227974, 0.34461218, 1)
+
+[node name="Imagen" type="TextureRect" parent="Room3" unique_id=552094012]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImageButton" parent="Room3" unique_id=1902106338 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 1442.0
+offset_top = 186.0
+offset_right = 1636.0
+offset_bottom = 380.0
+
+[node name="ImageButton2" parent="Room3" unique_id=1247071303 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 156.0
+offset_right = 1211.0
+offset_bottom = 391.0
+puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
+
+[node name="ChangeRoomButtons" type="Control" parent="Room3" unique_id=1368423670]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ArrowButton" parent="Room3/ChangeRoomButtons" unique_id=1123491210 instance=ExtResource("3_8rbpu")]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 568.0
+offset_right = 154.0
+offset_bottom = 608.0
+rotation = -3.1415927
+scale = Vector2(4, 4)
+next_room = 2
