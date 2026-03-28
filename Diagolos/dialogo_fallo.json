@@ -1,0 +1,17 @@
+[
+	{
+		"texto": "¡Agh! Mi cabeza...",
+		"status": "pensar",
+		"sound": "no"
+	},
+	{
+		"texto": "¿Me genera un intenso dolor no dar con la respuesta?",
+		"status": "pensar",
+		"sound": "no"
+	},
+	{
+		"texto": "No creo que pueda equivocarme otra vez...",
+		"status": "pensar",
+		"sound": "no"
+	}
+]

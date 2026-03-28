@@ -12,6 +12,7 @@ func _process(_delta: float) -> void:
 
 func _appear_border():
 	animation_player.play("appear")
+	TextBox._load_dialog("dialogo_fallo")
 	await animation_player.animation_finished
 	animation_player.play("idle")
 

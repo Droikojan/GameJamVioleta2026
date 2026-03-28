@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_n2nch"]
 
 [node name="Puzzle1" type="CanvasLayer" unique_id=760514330]
+layer = 0
 script = ExtResource("1_n2nch")
 
 [node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
