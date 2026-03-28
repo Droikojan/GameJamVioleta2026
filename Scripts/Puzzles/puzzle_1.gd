@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 @export var puzzle_id : int = 1
+@export var dialog_id : String = "dialogo1"
 
 var puzzle_finished := false
 
@@ -30,4 +31,6 @@ func _on_button_d_pressed() -> void:
 	GameController._puzzle_failed()
 
 func _close_puzzle() -> void:
+	TextBox._load_dialog("dialogo1")
+	await TextBox.finish_textbox
 	TransitionController.close_puzzle(self)

@@ -19,6 +19,7 @@ var current_index: int = 0
 @onready var image_2: TextureRect = $Images/Image2
 @onready var image_3: TextureRect = $Images/Image3
 
+signal finish_textbox
 
 func _ready() -> void:
 	hide_textbox() # Esconder el cuadro por defecto
@@ -78,6 +79,7 @@ func _input_event() -> void:
 func hide_textbox():
 	textbox.text = ""
 	hide()
+	emit_signal("finish_textbox")
 
 # Mostrar la caja de texto y asignar acciones
 func show_textbox(next_text, status = "normal", sound = "no", imagen = "no"):
