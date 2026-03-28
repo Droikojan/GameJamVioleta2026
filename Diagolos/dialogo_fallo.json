@@ -2,16 +2,19 @@
 	{
 		"texto": "¡Agh! Mi cabeza...",
 		"status": "pensar",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "no"
 	},
 	{
-		"texto": "¿Me genera un intenso dolor no dar con la respuesta?",
+		"texto": "No creo que esa sea la respuesta...",
 		"status": "pensar",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "no"
 	},
 	{
-		"texto": "No creo que pueda equivocarme otra vez...",
+		"texto": "No debo volver a equivocarme.",
 		"status": "pensar",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "no"
 	}
 ]

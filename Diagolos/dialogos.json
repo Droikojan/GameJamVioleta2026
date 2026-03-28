@@ -2,26 +2,31 @@
 	{
 		"texto": "Ay... tsk, mi cabeza...",
 		"status": "normal",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "no"
 	},
 	{
 		"texto": "Intenta levantarse torpemente",
 		"status": "accion",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "mostrar_imagen1"
 	},
 	{
 		"texto": "¿Por qué está esto tan oscuro...?",
 		"status": "pensar",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "ocultar_imagen1"
 	},
 	{
 		"texto": "¡OUCH!",
 		"status": "normal",
-		"sound": "no"
+		"sound": "no",
+		"imagen": "no"
 	},
 	{
 		"texto": "Todo me da demasiadas vueltas, que mareo...",
 		"status": "pensar",
-		"sound": "sonido1"
+		"sound": "sonido1",
+		"imagen": "no"
 	}
 ]

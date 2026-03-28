@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bp5igvqyaldu2" path="res://Assets/Textures/Texturelabs_Grunge_241M.jpg" id="2_ail03"]
 [ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="3_ail03"]
 [ext_resource type="AudioStream" uid="uid://dhq4ptuew4vpn" path="res://Assets/SFX/Boom Effect Sound.mp3" id="4_ail03"]
+[ext_resource type="Texture2D" uid="uid://d23h3qx8gjpdv" path="res://Assets/Images/Imagen de prueba.png" id="5_e2kc4"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5d5p"]
 texture = ExtResource("2_ail03")
@@ -96,6 +97,34 @@ offset_bottom = 1077.0
 [node name="BoomSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1986796147]
 stream = ExtResource("4_ail03")
 bus = &"SFX"
+
+[node name="Images" type="Control" parent="." unique_id=446648322]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Image1" type="TextureRect" parent="Images" unique_id=1636528238]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("5_e2kc4")
+
+[node name="Image2" type="TextureRect" parent="Images" unique_id=242428796]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("5_e2kc4")
+
+[node name="Image3" type="TextureRect" parent="Images" unique_id=666570422]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("5_e2kc4")
 
 [connection signal="pressed" from="ClickAreaButtons/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickAreaButtons/Button2" to="." method="_on_button_2_pressed"]

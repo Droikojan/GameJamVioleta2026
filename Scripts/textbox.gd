@@ -14,9 +14,18 @@ var current_index: int = 0
 # Nodos de sonidos
 @onready var boom_sound: AudioStreamPlayer = $Sounds/BoomSound
 
+# Nodos de imagen
+@onready var image_1: TextureRect = $Images/Image1
+@onready var image_2: TextureRect = $Images/Image2
+@onready var image_3: TextureRect = $Images/Image3
+
 
 func _ready() -> void:
 	hide_textbox() # Esconder el cuadro por defecto
+	
+	fade_out_image(image_1)
+	fade_out_image(image_2)
+	fade_out_image(image_3)
 
 func _load_dialog(dialogCode: String) -> void:
 	# Cargar el JSON de textos
@@ -50,7 +59,7 @@ func load_texts(route: String):
 func show_next_textbox():
 	if current_index < text_list.size():
 		var loaded_data = text_list[current_index]
-		show_textbox(loaded_data["texto"], loaded_data["status"], loaded_data["sound"])
+		show_textbox(loaded_data["texto"], loaded_data["status"], loaded_data["sound"], loaded_data["imagen"])
 		current_index += 1
 	else:
 		hide_textbox()
@@ -71,7 +80,7 @@ func hide_textbox():
 	hide()
 
 # Mostrar la caja de texto y asignar acciones
-func show_textbox(next_text, status = "normal", sound = "no"):
+func show_textbox(next_text, status = "normal", sound = "no", imagen = "no"):
 	textbox.text = next_text
 	
 	if tween:
@@ -92,6 +101,13 @@ func show_textbox(next_text, status = "normal", sound = "no"):
 	if (sound == 'sonido1'):
 		boom_sound.play()
 	
+	if (imagen == 'mostrar_imagen1'):
+		fade_in_image(image_1)
+	
+	if (imagen == 'ocultar_imagen1'):
+		fade_out_image(image_1)
+	
+	
 	# Escibir el texto actual
 	textbox.text = start + textbox.text + end
 	textbox.visible_ratio = 0.0
@@ -107,3 +123,13 @@ func _on_button_pressed() -> void:
 
 func _on_button_2_pressed() -> void:
 	_input_event()
+
+func fade_out_image(node: TextureRect):
+	print("Ocultando")
+	var tween = create_tween()
+	tween.tween_property(node, "modulate:a", 0.0, 1.0) # 1 segundo
+
+func fade_in_image(node: TextureRect):
+	print("Mostrando")
+	var tween = create_tween()
+	tween.tween_property(node, "modulate:a", 1.0, 1.0) # 1 segundo
