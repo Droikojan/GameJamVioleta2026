@@ -72,7 +72,6 @@ offset_right = 999.0
 offset_bottom = 1001.0
 texture_normal = ExtResource("6_fhlu0")
 texture_hover = ExtResource("7_bktio")
-puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
 
 [node name="ImageButton3" parent="Room1" unique_id=816790764 instance=ExtResource("4_fuudy")]
 layout_mode = 0

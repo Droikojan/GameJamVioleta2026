@@ -1,25 +1,26 @@
 [gd_scene format=3 uid="uid://45qyuesn84xa"]
 
 [ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_n2nch"]
+[ext_resource type="Texture2D" uid="uid://cqqvp03lto2k4" path="res://Assets/Images/PuzzleMordida/Visual comleto con fondo.PNG" id="2_tpgmr"]
+[ext_resource type="Texture2D" uid="uid://cj6qtmpy46d" path="res://Assets/Images/PuzzleMordida/Ficha2.png" id="3_7voc0"]
+[ext_resource type="Texture2D" uid="uid://cxn3ptodi2gsu" path="res://Assets/Images/PuzzleMordida/Ficha2 invisible.png" id="3_k6ppd"]
+[ext_resource type="Texture2D" uid="uid://b6twgunjriq7k" path="res://Assets/Images/PuzzleMordida/Ficha1.png" id="4_torea"]
+[ext_resource type="Texture2D" uid="uid://4jbbcdjn5u5w" path="res://Assets/Images/PuzzleMordida/Ficha1 invisible.png" id="5_746lf"]
+[ext_resource type="Texture2D" uid="uid://cr2rhwn3qdjfa" path="res://Assets/Images/PuzzleMordida/Ficha3.png" id="5_jua6k"]
+[ext_resource type="Texture2D" uid="uid://665qvstcy4es" path="res://Assets/Images/PuzzleMordida/Ficha3 invisible.png" id="7_hgpwj"]
 
 [node name="Puzzle1" type="CanvasLayer" unique_id=760514330]
 layer = 0
 script = ExtResource("1_n2nch")
 
-[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.67064744, 0.87105584, 0.7356984, 1)
-
 [node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
+modulate = Color(0.8117647, 0.8117647, 0.8117647, 1)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_tpgmr")
 
 [node name="Buttons" type="Control" parent="." unique_id=1864772190]
 layout_mode = 3
@@ -27,37 +28,39 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ButtonA" type="Button" parent="Buttons" unique_id=1939611361]
+[node name="ButtonA" type="TextureButton" parent="Buttons" unique_id=313128534]
 layout_mode = 0
-offset_left = 119.0
-offset_top = 71.0
-offset_right = 138.0
-offset_bottom = 102.0
-text = "A"
+offset_left = 1164.0
+offset_top = 1.0
+offset_right = 1918.0
+offset_bottom = 683.0
+rotation = 0.0022657004
+texture_normal = ExtResource("3_k6ppd")
+texture_hover = ExtResource("3_7voc0")
 
-[node name="ButtonB" type="Button" parent="Buttons" unique_id=1091045370]
+[node name="ButtonB" type="TextureButton" parent="Buttons" unique_id=1237577408]
 layout_mode = 0
-offset_left = 254.0
-offset_top = 87.0
-offset_right = 273.0
-offset_bottom = 118.0
-text = "B"
+offset_left = 265.0
+offset_top = 81.0
+offset_right = 1092.0
+offset_bottom = 807.0
+texture_normal = ExtResource("5_746lf")
+texture_hover = ExtResource("4_torea")
 
-[node name="ButtonC" type="Button" parent="Buttons" unique_id=1520056540]
+[node name="ButtonC" type="TextureButton" parent="Buttons" unique_id=1221741323]
 layout_mode = 0
-offset_left = 117.0
-offset_top = 183.0
-offset_right = 136.0
-offset_bottom = 214.0
-text = "C"
+offset_left = 936.0
+offset_top = 607.0
+offset_right = 1658.0
+offset_bottom = 1080.0
+texture_normal = ExtResource("7_hgpwj")
+texture_hover = ExtResource("5_jua6k")
 
-[node name="ButtonD" type="Button" parent="Buttons" unique_id=1479469494]
+[node name="ButtonD" type="TextureButton" parent="Buttons" unique_id=1611105275]
+visible = false
 layout_mode = 0
-offset_left = 257.0
-offset_top = 202.0
-offset_right = 277.0
-offset_bottom = 233.0
-text = "D"
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="FailedSound" type="AudioStreamPlayer" parent="." unique_id=1862192133]
 bus = &"SFX"

@@ -1,11 +1,19 @@
-[gd_scene format=3 uid="uid://ysdjy7bnpv04"]
+[gd_scene format=3 uid="uid://b221e640qtomh"]
 
-[ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_m6eup"]
+[ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_mw4np"]
 
 [node name="Puzzle2" type="CanvasLayer" unique_id=760514330]
 layer = 0
-script = ExtResource("1_m6eup")
+script = ExtResource("1_mw4np")
 puzzle_id = 2
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.67064744, 0.87105584, 0.7356984, 1)
 
 [node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
 anchors_preset = 15
