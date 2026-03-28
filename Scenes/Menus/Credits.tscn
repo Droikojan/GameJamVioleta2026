@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ydaiibkxuya0"]
 
 [ext_resource type="Script" uid="uid://dhe7km0kos48h" path="res://Scripts/Menu/Credits.gd" id="1_h41mv"]
+[ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="2_da514"]
 
 [node name="Credits" type="Control" unique_id=2007904074]
 layout_mode = 3
@@ -24,6 +25,7 @@ offset_right = 443.0
 offset_bottom = 161.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_da514")
 text = "Based on an idea of ____
 
 
@@ -55,6 +57,7 @@ offset_right = 64.0
 offset_bottom = 291.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_da514")
 text = "BACK TO MENU"
 
 [connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]

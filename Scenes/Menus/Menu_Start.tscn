@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d2gessginbpmo" path="res://Scripts/Menu/MenuController.gd" id="1_cc1hs"]
 [ext_resource type="Texture2D" uid="uid://lyrk5rufx4o6" path="res://Assets/Images/Room1/Bg.PNG" id="2_crq1h"]
+[ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="3_pap8f"]
 
 [node name="Menu_Start" type="Control" unique_id=2007904074 groups=["StartMenu"]]
 layout_mode = 3
@@ -49,14 +50,17 @@ scale = Vector2(2.925, 2.925)
 
 [node name="PlayButton" type="Button" parent="Default/VBoxContainer" unique_id=293300238]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_pap8f")
 text = "PLAY"
 
 [node name="SettingsButton" type="Button" parent="Default/VBoxContainer" unique_id=1267547648]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_pap8f")
 text = "SETTINGS"
 
 [node name="CredditsButton" type="Button" parent="Default/VBoxContainer" unique_id=258955736]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_pap8f")
 text = "CREDITS"
 
 [connection signal="pressed" from="Default/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
