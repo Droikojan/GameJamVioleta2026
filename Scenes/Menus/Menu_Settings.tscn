@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://eo0erfbqjyi8" path="res://Assets/Images/settings de prueba.png" id="2_0mkol"]
 [ext_resource type="Texture2D" uid="uid://dwguqpmetbedu" path="res://Assets/Images/settings de prueba hover.png" id="3_dlm11"]
 [ext_resource type="Texture2D" uid="uid://gvfr5ccgc0al" path="res://Assets/Images/cerrar settings de prueba.png" id="4_dlm11"]
+[ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="4_er6eu"]
 [ext_resource type="Texture2D" uid="uid://bkxyuxytaii2f" path="res://Assets/Images/cerrar settings de prueba hover.png" id="5_er6eu"]
 
 [node name="Menu_Settings" type="CanvasLayer" unique_id=197451809 node_paths=PackedStringArray("music_volume_slider", "sfx_volume_slider", "settings_button", "settings")]
@@ -54,23 +55,14 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.54509807)
 
-[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Settings" unique_id=184160442]
-layout_mode = 0
-offset_left = -88.0
-offset_top = -57.0
-offset_right = 271.0
-offset_bottom = 107.0
-color = Color(1, 0.6862745, 1, 1)
-
-[node name="Imagen" type="TextureRect" parent="Settings" unique_id=646365521]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="MusicLabel" type="Label" parent="Settings" unique_id=1287060708]
 layout_mode = 0
-offset_right = 51.0
-offset_bottom = 23.0
+offset_left = -268.0
+offset_top = -80.0
+offset_right = -217.0
+offset_bottom = -57.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_er6eu")
 text = "MUSIC"
 
 [node name="MusicSlider" type="HSlider" parent="Settings/MusicLabel" unique_id=1355664694]
@@ -84,9 +76,12 @@ step = 0.1
 
 [node name="SFXLabel" type="Label" parent="Settings" unique_id=616313363]
 layout_mode = 0
-offset_top = 32.0
-offset_right = 40.0
-offset_bottom = 55.0
+offset_left = -268.0
+offset_top = 39.0
+offset_right = -228.0
+offset_bottom = 62.0
+scale = Vector2(4, 4)
+theme_override_fonts/font = ExtResource("4_er6eu")
 text = "SFX"
 
 [node name="SFXSlider" type="HSlider" parent="Settings/SFXLabel" unique_id=1289340688]
