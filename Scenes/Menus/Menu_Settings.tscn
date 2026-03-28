@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvkj4058hj6yn"]
 
-[ext_resource type="Script" uid="uid://diyps4188hxep" path="res://Scripts/Menu_settings.gd" id="1_36qmg"]
+[ext_resource type="Script" uid="uid://diyps4188hxep" path="res://Scripts/Menu/Menu_settings.gd" id="1_36qmg"]
 
 [node name="Menu_Settings" type="CanvasLayer" unique_id=197451809 node_paths=PackedStringArray("music_volume_slider", "sfx_volume_slider")]
 script = ExtResource("1_36qmg")

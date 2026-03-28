@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://45qyuesn84xa"]
+
+[ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_n2nch"]
+
+[node name="Puzzle1" type="CanvasLayer" unique_id=760514330]
+script = ExtResource("1_n2nch")
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.67064744, 0.87105584, 0.7356984, 1)
+
+[node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons" type="Control" parent="." unique_id=1864772190]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonA" type="Button" parent="Buttons" unique_id=1939611361]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 71.0
+offset_right = 138.0
+offset_bottom = 102.0
+text = "A"
+
+[node name="ButtonB" type="Button" parent="Buttons" unique_id=1091045370]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 87.0
+offset_right = 273.0
+offset_bottom = 118.0
+text = "B"
+
+[node name="ButtonC" type="Button" parent="Buttons" unique_id=1520056540]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 183.0
+offset_right = 136.0
+offset_bottom = 214.0
+text = "C"
+
+[node name="ButtonD" type="Button" parent="Buttons" unique_id=1479469494]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 202.0
+offset_right = 277.0
+offset_bottom = 233.0
+text = "D"
+
+[connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Buttons/ButtonC" to="." method="_on_button_c_pressed"]
+[connection signal="pressed" from="Buttons/ButtonD" to="." method="_on_button_d_pressed"]
