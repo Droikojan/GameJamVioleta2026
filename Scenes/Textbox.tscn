@@ -96,6 +96,7 @@ offset_bottom = 1077.0
 
 [node name="BoomSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1986796147]
 stream = ExtResource("4_ail03")
+bus = &"SFX"
 
 [connection signal="pressed" from="ClickAreaButtons/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickAreaButtons/Button2" to="." method="_on_button_2_pressed"]

@@ -4,12 +4,6 @@ extends Node
 func _ready() -> void:
 	pass
 
-func save_best_score(score:int):
-	var config = ConfigFile.new()
-	config.set_value("game","best_score", score)
-	config.save("user://best_score.cfg")
-	print("Guardando " + str(score))
-
 func save_config(music_volume:float, effects_volume:float):
 	var config = ConfigFile.new()
 	config.set_value("config","music_volume", music_volume)

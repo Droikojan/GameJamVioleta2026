@@ -18,6 +18,9 @@ func _ready() -> void:
 	
 	music_volume_slider.value = ConfigSave.load_music_volume_config()
 	sfx_volume_slider.value = ConfigSave.load_effects_volume_config()
+	
+	AudioServer.set_bus_volume_db(music_bus, linear_to_db(music_volume_slider.value))
+	AudioServer.set_bus_volume_db(sfx_bus, linear_to_db(sfx_volume_slider.value))
 
 func _process(_delta: float) -> void:
 	if get_tree().get_nodes_in_group("StartMenu").size() > 0 or settings.visible:
