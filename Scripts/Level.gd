@@ -12,6 +12,8 @@ func _ready() -> void:
 	room1.show()
 	room2.hide()
 	room3.hide()
+	
+	TextBox._load_dialog(1)
 
 func _change_room(next_room : int) -> void:
 	current_room = next_room

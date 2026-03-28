@@ -1,0 +1,27 @@
+[
+	{
+		"texto": "Ay... tsk, mi cabeza...",
+		"status": "normal",
+		"sound": "no"
+	},
+	{
+		"texto": "Intenta levantarse torpemente",
+		"status": "accion",
+		"sound": "no"
+	},
+	{
+		"texto": "¿Por qué está esto tan oscuro...?",
+		"status": "pensar",
+		"sound": "no"
+	},
+	{
+		"texto": "¡OUCH!",
+		"status": "normal",
+		"sound": "no"
+	},
+	{
+		"texto": "Todo me da demasiadas vueltas, que mareo...",
+		"status": "pensar",
+		"sound": "sonido1"
+	}
+]

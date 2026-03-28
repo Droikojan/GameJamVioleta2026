@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://278qpy833fp0"]
+
+[ext_resource type="Script" uid="uid://b823xhpiqlhk4" path="res://scripts/textbox.gd" id="1_db1ld"]
+[ext_resource type="Texture2D" uid="uid://bp5igvqyaldu2" path="res://Assets/Textures/Texturelabs_Grunge_241M.jpg" id="2_ail03"]
+[ext_resource type="FontFile" uid="uid://csdhymlb6wgi5" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_e2kc4"]
+[ext_resource type="AudioStream" uid="uid://dhq4ptuew4vpn" path="res://Assets/SFX/Boom Effect Sound.mp3" id="4_ail03"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5d5p"]
+texture = ExtResource("2_ail03")
+texture_margin_top = 1084.0
+
+[sub_resource type="FontVariation" id="FontVariation_3xmdk"]
+base_font = ExtResource("3_e2kc4")
+
+[node name="Textbox" type="CanvasLayer" unique_id=265287770]
+script = ExtResource("1_db1ld")
+
+[node name="TextContainer" type="MarginContainer" parent="." unique_id=513617638]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -147.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Panel" type="Panel" parent="TextContainer" unique_id=572221488]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_g5d5p")
+
+[node name="InnerContainer" type="MarginContainer" parent="TextContainer" unique_id=1121849079]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextContainer/InnerContainer" unique_id=1380073678]
+layout_mode = 2
+
+[node name="Start" type="Label" parent="TextContainer/InnerContainer/HBoxContainer" unique_id=2034797059]
+visible = false
+custom_minimum_size = Vector2(28, 32)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = SubResource("FontVariation_3xmdk")
+theme_override_font_sizes/font_size = 32
+text = "*"
+
+[node name="Text" type="Label" parent="TextContainer/InnerContainer/HBoxContainer" unique_id=2000367499]
+custom_minimum_size = Vector2(992, 51)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_3xmdk")
+theme_override_font_sizes/font_size = 24
+text = "Placeholder del texto para ver si salta de línea correctamente sin salirse del cuadro de texto"
+autowrap_mode = 2
+
+[node name="End" type="Label" parent="TextContainer/InnerContainer/HBoxContainer" unique_id=1129899502]
+visible = false
+custom_minimum_size = Vector2(28, 32)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = SubResource("FontVariation_3xmdk")
+theme_override_font_sizes/font_size = 32
+text = "*"
+
+[node name="ClickAreaButtons" type="Control" parent="." unique_id=1380639415]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="ClickAreaButtons" unique_id=54158192]
+layout_mode = 0
+offset_right = 1729.0
+offset_bottom = 1098.0
+
+[node name="Button2" type="Button" parent="ClickAreaButtons" unique_id=977443515]
+layout_mode = 0
+offset_left = 1728.0
+offset_top = 132.0
+offset_right = 1934.0
+offset_bottom = 1077.0
+
+[node name="Sounds" type="Node" parent="." unique_id=264587423]
+
+[node name="BoomSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1986796147]
+stream = ExtResource("4_ail03")
+
+[connection signal="pressed" from="ClickAreaButtons/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ClickAreaButtons/Button2" to="." method="_on_button_2_pressed"]
