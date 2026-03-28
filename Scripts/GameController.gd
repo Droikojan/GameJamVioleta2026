@@ -28,4 +28,3 @@ func _puzzle_failed():
 	if puzzle_failed == true:
 		DamagedMask._close_screen()
 	puzzle_failed = true
-	print("FALLO")

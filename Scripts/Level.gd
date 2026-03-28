@@ -9,9 +9,9 @@ extends Control
 
 @export var footsteps_sfx : AudioStreamPlayer
 
-
-
 var current_room := 1
+var room2_enter := false
+var room3_enter := false
 
 func _ready() -> void:
 	room1.show()
@@ -43,7 +43,13 @@ func _change_room(next_room : int) -> void:
 		room1.hide()
 		room2.show()
 		room3.hide()
+		if room2_enter == false:
+			room2_enter = true
+			TextBox._load_dialog(2)
 	if current_room == 3:
 		room1.hide()
 		room2.hide()
 		room3.show()
+		if room3_enter == false:
+			room3_enter = true
+			TextBox._load_dialog(3)

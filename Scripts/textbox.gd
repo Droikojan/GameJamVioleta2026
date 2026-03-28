@@ -19,9 +19,15 @@ func _ready() -> void:
 	hide_textbox() # Esconder el cuadro por defecto
 
 func _load_dialog(dialogCode: int) -> void:
+	# Cargar el JSON de textos
 	if dialogCode == 1:
-		load_texts("res://Diagolos/dialogos.json") # Cargar el JSON de textos
+		load_texts("res://Diagolos/dialogos.json")
+	if dialogCode == 2:
+		load_texts("res://Diagolos/dialogos.json")
+	if dialogCode == 3:
+		load_texts("res://Diagolos/dialogos.json")
 	
+	current_index = 0
 	show_next_textbox()
 
 # Cargar los textos

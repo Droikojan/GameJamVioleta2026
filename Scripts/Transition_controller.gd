@@ -19,7 +19,6 @@ func load_puzzle(instance, self_node) -> void:
 	$AnimationPlayer.play("LoadPuzzle")
 
 func _load_puzzle():
-	print("HOLA")
 	spawn_node.add_child(instance)
 
 func close_puzzle(puzzle_node) -> void:
