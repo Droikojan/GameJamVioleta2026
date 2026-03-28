@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://whvhm1d6ko2g"]
+
+[ext_resource type="Script" uid="uid://dop5lwvdxvtdl" path="res://Scripts/Transition_controller.gd" id="1_a77ny"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_66ino"]
+
+[sub_resource type="Animation" id="Animation_a77ny"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.07683582, 0.07683582, 0.07683582, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_66ino"]
+resource_name = "Transition"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.078431375, 0.078431375, 0.078431375, 0), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_load_level"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bnqan"]
+_data = {
+&"RESET": SubResource("Animation_a77ny"),
+&"Transition": SubResource("Animation_66ino")
+}
+
+[node name="TransitionController" type="CanvasLayer" unique_id=169170620]
+script = ExtResource("1_a77ny")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1729066573]
+material = SubResource("CanvasItemMaterial_66ino")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07683582, 0.07683582, 0.07683582, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1316941805]
+libraries/ = SubResource("AnimationLibrary_bnqan")

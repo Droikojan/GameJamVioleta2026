@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://bvkj4058hj6yn"]
+
+[ext_resource type="Script" uid="uid://diyps4188hxep" path="res://Scripts/Menu_settings.gd" id="1_36qmg"]
+
+[node name="Menu_Settings" type="CanvasLayer" unique_id=197451809 node_paths=PackedStringArray("music_volume_slider", "sfx_volume_slider")]
+script = ExtResource("1_36qmg")
+music_volume_slider = NodePath("Settings/MusicLabel/MusicSlider")
+sfx_volume_slider = NodePath("Settings/SFXLabel/SFXSlider")
+
+[node name="Settings" type="Control" parent="." unique_id=1190990996]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Settings" unique_id=184160442]
+layout_mode = 0
+offset_left = -88.0
+offset_top = -57.0
+offset_right = 271.0
+offset_bottom = 107.0
+color = Color(1, 0.6862745, 1, 1)
+
+[node name="Imagen" type="TextureRect" parent="Settings" unique_id=646365521]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MusicLabel" type="Label" parent="Settings" unique_id=1287060708]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "MUSIC"
+
+[node name="MusicSlider" type="HSlider" parent="Settings/MusicLabel" unique_id=1355664694]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 4.0
+offset_right = 178.0
+offset_bottom = 20.0
+max_value = 1.0
+step = 0.1
+
+[node name="SFXLabel" type="Label" parent="Settings" unique_id=616313363]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 40.0
+offset_bottom = 55.0
+text = "SFX"
+
+[node name="SFXSlider" type="HSlider" parent="Settings/SFXLabel" unique_id=1289340688]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 4.0
+offset_right = 178.0
+offset_bottom = 20.0
+max_value = 1.0
+step = 0.1
+
+[node name="BackButton" type="Button" parent="." unique_id=310124962]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -88.0
+offset_top = 24.0
+offset_right = -38.0
+offset_bottom = 55.0
+grow_horizontal = 0
+text = "BACK"
+
+[connection signal="value_changed" from="Settings/MusicLabel/MusicSlider" to="." method="_on_music_volume_value_changed"]
+[connection signal="value_changed" from="Settings/SFXLabel/SFXSlider" to="." method="_on_sfx_volume_value_changed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

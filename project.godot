@@ -15,10 +15,20 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://bwy54midfpcmv"
+
+[autoload]
+
+ConfigSave="*uid://dj8cjpcka4kuo"
+MenuSettings="*uid://bvkj4058hj6yn"
+TransitionController="*uid://whvhm1d6ko2g"
+
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [physics]
 
