@@ -4,6 +4,7 @@
 
 [node name="Puzzle2" type="CanvasLayer" unique_id=760514330]
 script = ExtResource("1_m6eup")
+puzzle_id = 2
 
 [node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
 anchors_preset = 15
