@@ -1,11 +1,31 @@
 [gd_scene format=3 uid="uid://bvkj4058hj6yn"]
 
-[ext_resource type="Script" uid="uid://diyps4188hxep" path="res://Scripts/Menu/Menu_settings.gd" id="1_36qmg"]
+[ext_resource type="Script" uid="uid://diyps4188hxep" path="res://Scripts/Menu/Menu_settings.gd" id="1_yq614"]
+[ext_resource type="Texture2D" uid="uid://eo0erfbqjyi8" path="res://Assets/Images/settings de prueba.png" id="2_0mkol"]
+[ext_resource type="Texture2D" uid="uid://dwguqpmetbedu" path="res://Assets/Images/settings de prueba hover.png" id="3_dlm11"]
+[ext_resource type="Texture2D" uid="uid://gvfr5ccgc0al" path="res://Assets/Images/cerrar settings de prueba.png" id="4_dlm11"]
+[ext_resource type="Texture2D" uid="uid://bkxyuxytaii2f" path="res://Assets/Images/cerrar settings de prueba hover.png" id="5_er6eu"]
 
-[node name="Menu_Settings" type="CanvasLayer" unique_id=197451809 node_paths=PackedStringArray("music_volume_slider", "sfx_volume_slider")]
-script = ExtResource("1_36qmg")
+[node name="Menu_Settings" type="CanvasLayer" unique_id=197451809 node_paths=PackedStringArray("music_volume_slider", "sfx_volume_slider", "settings_button", "settings")]
+script = ExtResource("1_yq614")
 music_volume_slider = NodePath("Settings/MusicLabel/MusicSlider")
 sfx_volume_slider = NodePath("Settings/SFXLabel/SFXSlider")
+settings_button = NodePath("SettingsButton")
+settings = NodePath("Settings")
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=1703985869]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 18.0
+offset_right = -40.0
+offset_bottom = 58.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_0mkol")
+texture_hover = ExtResource("3_dlm11")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Settings" type="Control" parent="." unique_id=1190990996]
 layout_mode = 3
@@ -20,6 +40,19 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BlackEffect" type="ColorRect" parent="Settings" unique_id=489366785]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -949.0
+offset_top = -529.0
+offset_right = 955.0
+offset_bottom = 535.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
 
 [node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="Settings" unique_id=184160442]
 layout_mode = 0
@@ -36,7 +69,7 @@ offset_bottom = 40.0
 
 [node name="MusicLabel" type="Label" parent="Settings" unique_id=1287060708]
 layout_mode = 0
-offset_right = 40.0
+offset_right = 51.0
 offset_bottom = 23.0
 text = "MUSIC"
 
@@ -65,17 +98,22 @@ offset_bottom = 20.0
 max_value = 1.0
 step = 0.1
 
-[node name="BackButton" type="Button" parent="." unique_id=310124962]
+[node name="BackButton" type="TextureButton" parent="Settings" unique_id=644329420]
+layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -88.0
-offset_top = 24.0
-offset_right = -38.0
-offset_bottom = 55.0
+offset_left = 857.0
+offset_top = -502.0
+offset_right = 897.0
+offset_bottom = -462.0
 grow_horizontal = 0
-text = "BACK"
+texture_normal = ExtResource("4_dlm11")
+texture_hover = ExtResource("5_er6eu")
+ignore_texture_size = true
+stretch_mode = 0
 
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="value_changed" from="Settings/MusicLabel/MusicSlider" to="." method="_on_music_volume_value_changed"]
 [connection signal="value_changed" from="Settings/SFXLabel/SFXSlider" to="." method="_on_sfx_volume_value_changed"]
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Settings/BackButton" to="." method="_on_back_button_pressed"]
