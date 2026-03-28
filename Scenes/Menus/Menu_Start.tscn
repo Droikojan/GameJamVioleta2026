@@ -4,6 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://lyrk5rufx4o6" path="res://Assets/Images/Room1/Bg.PNG" id="2_crq1h"]
 [ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="3_pap8f"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pap8f"]
+load_path = "res://.godot/imported/Texturelabs_Grunge_241M.jpg-7cb3cf949fc995e4d5f82c48117a6d88.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ygsdb"]
+texture = SubResource("CompressedTexture2D_pap8f")
+texture_margin_top = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7b6m2"]
+texture = SubResource("CompressedTexture2D_pap8f")
+texture_margin_top = 3.0
+texture_margin_bottom = 3.0
+
 [node name="Menu_Start" type="Control" unique_id=2007904074 groups=["StartMenu"]]
 layout_mode = 3
 anchors_preset = 15
@@ -40,7 +53,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Default" unique_id=334622503]
+[node name="VBoxContainer" type="VBoxContainer" parent="Default" unique_id=183582900]
 layout_mode = 0
 offset_left = 392.99997
 offset_top = 149.99998
@@ -48,19 +61,22 @@ offset_right = 474.99997
 offset_bottom = 251.0
 scale = Vector2(2.925, 2.925)
 
-[node name="PlayButton" type="Button" parent="Default/VBoxContainer" unique_id=293300238]
+[node name="PlayButton" type="Button" parent="Default/VBoxContainer" unique_id=1915192355]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ygsdb")
 text = "PLAY"
 
-[node name="SettingsButton" type="Button" parent="Default/VBoxContainer" unique_id=1267547648]
+[node name="SettingsButton" type="Button" parent="Default/VBoxContainer" unique_id=1341623010]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7b6m2")
 text = "SETTINGS"
 
-[node name="CredditsButton" type="Button" parent="Default/VBoxContainer" unique_id=258955736]
+[node name="CredditsButton" type="Button" parent="Default/VBoxContainer" unique_id=2139743210]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7b6m2")
 text = "CREDITS"
 
 [connection signal="pressed" from="Default/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
