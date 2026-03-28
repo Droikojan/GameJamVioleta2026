@@ -4,6 +4,8 @@ extends Control
 @export var room2 : Control
 @export var room3 : Control
 
+@export var footsteps_sfx : AudioStreamPlayer
+
 var current_room := 1
 
 func _ready() -> void:
@@ -13,6 +15,7 @@ func _ready() -> void:
 
 func _change_room(next_room : int) -> void:
 	current_room = next_room
+	footsteps_sfx.play(0.0)
 	if current_room == 1:
 		room1.show()
 		room2.hide()

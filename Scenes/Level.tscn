@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
 [ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
+[ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Pisadas de prueba.mp3" id="5_xylue"]
 
-[node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3") groups=["RoomController"]]
+[node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3", "footsteps_sfx") groups=["RoomController"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,6 +17,7 @@ script = ExtResource("1_vsvp5")
 room1 = NodePath("Room1")
 room2 = NodePath("Room2")
 room3 = NodePath("Room3")
+footsteps_sfx = NodePath("Footsteps")
 
 [node name="Room1" type="Control" parent="." unique_id=1379833664]
 layout_mode = 1
@@ -196,3 +198,7 @@ stream = ExtResource("4_xylue")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[node name="Footsteps" type="AudioStreamPlayer" parent="." unique_id=690003209]
+stream = ExtResource("5_xylue")
+bus = &"SFX"
