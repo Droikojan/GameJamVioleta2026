@@ -1,10 +1,17 @@
 [gd_scene format=3 uid="uid://cow3mdict3hp4"]
 
 [ext_resource type="Script" uid="uid://2fm06glygmkg" path="res://Scripts/Level.gd" id="1_vsvp5"]
+[ext_resource type="Texture2D" uid="uid://bj20b8c0mlsj1" path="res://Assets/Images/Room1/Bg+cadáveres.PNG" id="2_133si"]
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
+[ext_resource type="Texture2D" uid="uid://dle0h0ofw8yg8" path="res://Assets/Images/Room1/Cadáveres invisibles.PNG" id="4_esopp"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
 [ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
+[ext_resource type="Texture2D" uid="uid://dawej3jdhkle0" path="res://Assets/Images/Room1/Cadáveres.PNG" id="5_b10nm"]
 [ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Pisadas de prueba.mp3" id="5_xylue"]
+[ext_resource type="Texture2D" uid="uid://bvkla0l2rs18s" path="res://Assets/Images/Room1/Cadáver invisible.PNG" id="6_fhlu0"]
+[ext_resource type="Texture2D" uid="uid://d2cu0lnhwqul5" path="res://Assets/Images/Room1/Cadáver.PNG" id="7_bktio"]
+[ext_resource type="Texture2D" uid="uid://cjn5kj4opbgf5" path="res://Assets/Images/Room1/Llaves invisibles.png" id="8_b10nm"]
+[ext_resource type="Texture2D" uid="uid://ccuqxg6stwkkm" path="res://Assets/Images/Room1/Llaves.PNG" id="9_fhlu0"]
 
 [node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3", "arrow_room1_bloqued", "arrow_room2_bloqued", "footsteps_sfx") groups=["RoomController"]]
 layout_mode = 3
@@ -45,20 +52,36 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_133si")
 
 [node name="ImageButton" parent="Room1" unique_id=2079899341 instance=ExtResource("4_fuudy")]
 layout_mode = 0
-offset_left = 428.0
-offset_top = 360.0
-offset_right = 622.0
-offset_bottom = 554.0
+offset_left = 298.0
+offset_top = 649.0
+offset_right = 671.0
+offset_bottom = 969.0
+texture_normal = ExtResource("4_esopp")
+texture_hover = ExtResource("5_b10nm")
+stretch_mode = 4
 
 [node name="ImageButton2" parent="Room1" unique_id=935021657 instance=ExtResource("4_fuudy")]
 layout_mode = 0
-offset_left = 1143.0
-offset_top = 467.0
-offset_right = 1378.0
-offset_bottom = 702.0
+offset_left = 798.0
+offset_top = 593.0
+offset_right = 999.0
+offset_bottom = 1001.0
+texture_normal = ExtResource("6_fhlu0")
+texture_hover = ExtResource("7_bktio")
+puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
+
+[node name="ImageButton3" parent="Room1" unique_id=816790764 instance=ExtResource("4_fuudy")]
+layout_mode = 0
+offset_left = 1438.0
+offset_top = 797.0
+offset_right = 1542.0
+offset_bottom = 881.0
+texture_normal = ExtResource("8_b10nm")
+texture_hover = ExtResource("9_fhlu0")
 puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
 
 [node name="ChangeRoomButtons" type="Control" parent="Room1" unique_id=1215421090]

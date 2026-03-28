@@ -1,16 +1,10 @@
 [gd_scene format=3 uid="uid://bugrl264ax7s1"]
 
 [ext_resource type="Script" uid="uid://i6cixaa7iw2p" path="res://Scripts/Image_button.gd" id="1_4wo0c"]
-[ext_resource type="Texture2D" uid="uid://d23h3qx8gjpdv" path="res://Assets/Images/Imagen de prueba.png" id="1_pufhd"]
-[ext_resource type="Texture2D" uid="uid://bxo1r5nlg8u1t" path="res://Assets/Images/Imagen de prueba  hover.png" id="2_6b0o6"]
 
 [node name="ImageButton" type="TextureButton" unique_id=2079899341]
 offset_right = 40.0
 offset_bottom = 40.0
-texture_normal = ExtResource("1_pufhd")
-texture_hover = ExtResource("2_6b0o6")
-ignore_texture_size = true
-stretch_mode = 0
 script = ExtResource("1_4wo0c")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://5ok4y36qvqnn"]
 
 [ext_resource type="Script" uid="uid://d2gessginbpmo" path="res://Scripts/Menu/MenuController.gd" id="1_cc1hs"]
+[ext_resource type="Texture2D" uid="uid://lyrk5rufx4o6" path="res://Assets/Images/Room1/Bg.PNG" id="2_crq1h"]
 
 [node name="Menu_Start" type="Control" unique_id=2007904074 groups=["StartMenu"]]
 layout_mode = 3
@@ -14,6 +15,15 @@ offset_bottom = 15.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cc1hs")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=445813251]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_crq1h")
 
 [node name="Default" type="Control" parent="." unique_id=389885032]
 layout_mode = 1
@@ -31,8 +41,11 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Default" unique_id=334622503]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 392.99997
+offset_top = 149.99998
+offset_right = 474.99997
+offset_bottom = 251.0
+scale = Vector2(2.925, 2.925)
 
 [node name="PlayButton" type="Button" parent="Default/VBoxContainer" unique_id=293300238]
 layout_mode = 2
