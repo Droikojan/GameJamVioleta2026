@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://278qpy833fp0"]
 
-[ext_resource type="Script" uid="uid://b823xhpiqlhk4" path="res://Scripts/textbox.gd" id="1_db1ld"]
+[ext_resource type="Script" uid="uid://b823xhpiqlhk4" path="res://scripts/textbox.gd" id="1_db1ld"]
 [ext_resource type="Texture2D" uid="uid://bp5igvqyaldu2" path="res://Assets/Textures/Texturelabs_Grunge_241M.jpg" id="2_ail03"]
-[ext_resource type="FontFile" uid="uid://csdhymlb6wgi5" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_e2kc4"]
+[ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="3_ail03"]
 [ext_resource type="AudioStream" uid="uid://dhq4ptuew4vpn" path="res://Assets/SFX/Boom Effect Sound.mp3" id="4_ail03"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5d5p"]
@@ -10,7 +10,6 @@ texture = ExtResource("2_ail03")
 texture_margin_top = 1084.0
 
 [sub_resource type="FontVariation" id="FontVariation_3xmdk"]
-base_font = ExtResource("3_e2kc4")
 
 [node name="Textbox" type="CanvasLayer" unique_id=265287770]
 script = ExtResource("1_db1ld")
@@ -59,7 +58,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = SubResource("FontVariation_3xmdk")
+theme_override_fonts/font = ExtResource("3_ail03")
 theme_override_font_sizes/font_size = 24
 text = "Placeholder del texto para ver si salta de línea correctamente sin salirse del cuadro de texto"
 autowrap_mode = 2
