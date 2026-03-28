@@ -30,10 +30,10 @@ offset_bottom = 40.0
 
 [node name="ButtonA" type="TextureButton" parent="Buttons" unique_id=313128534]
 layout_mode = 0
-offset_left = 1164.0
-offset_top = 1.0
+offset_left = 1167.0
+offset_top = 1.0067971
 offset_right = 1918.0
-offset_bottom = 683.0
+offset_bottom = 678.0068
 rotation = 0.0022657004
 texture_normal = ExtResource("3_k6ppd")
 texture_hover = ExtResource("3_7voc0")
@@ -41,8 +41,8 @@ texture_hover = ExtResource("3_7voc0")
 [node name="ButtonB" type="TextureButton" parent="Buttons" unique_id=1237577408]
 layout_mode = 0
 offset_left = 265.0
-offset_top = 81.0
-offset_right = 1092.0
+offset_top = 100.0
+offset_right = 1083.0
 offset_bottom = 807.0
 texture_normal = ExtResource("5_746lf")
 texture_hover = ExtResource("4_torea")
@@ -50,8 +50,8 @@ texture_hover = ExtResource("4_torea")
 [node name="ButtonC" type="TextureButton" parent="Buttons" unique_id=1221741323]
 layout_mode = 0
 offset_left = 936.0
-offset_top = 607.0
-offset_right = 1658.0
+offset_top = 608.0
+offset_right = 1659.0
 offset_bottom = 1080.0
 texture_normal = ExtResource("7_hgpwj")
 texture_hover = ExtResource("5_jua6k")

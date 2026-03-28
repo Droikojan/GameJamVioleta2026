@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bj20b8c0mlsj1"
-path="res://.godot/imported/Bg+cadáveres.PNG-d7fd3ad34582cf8aa80a8ac95316706d.ctex"
+uid="uid://b0bdhlaacf4on"
+path="res://.godot/imported/Bg+cadáveres.png-995d24c48ec5c71a68d902017c19517a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Room1/Bg+cadáveres.PNG"
-dest_files=["res://.godot/imported/Bg+cadáveres.PNG-d7fd3ad34582cf8aa80a8ac95316706d.ctex"]
+source_file="res://Assets/Images/Room1/Bg+cadáveres.png"
+dest_files=["res://.godot/imported/Bg+cadáveres.png-995d24c48ec5c71a68d902017c19517a.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cow3mdict3hp4"]
 
 [ext_resource type="Script" uid="uid://2fm06glygmkg" path="res://Scripts/Level.gd" id="1_vsvp5"]
-[ext_resource type="Texture2D" uid="uid://bj20b8c0mlsj1" path="res://Assets/Images/Room1/Bg+cadáveres.PNG" id="2_133si"]
+[ext_resource type="Texture2D" uid="uid://b0bdhlaacf4on" path="res://Assets/Images/Room1/Bg+cadáveres.PNG" id="2_133si"]
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
 [ext_resource type="Texture2D" uid="uid://dle0h0ofw8yg8" path="res://Assets/Images/Room1/Cadáveres invisibles.PNG" id="4_esopp"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
