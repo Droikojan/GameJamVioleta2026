@@ -12,6 +12,6 @@ func _on_pressed() -> void:
 	if was_pressed == false:
 		was_pressed = true
 		var instance = puzzle_scene.instantiate()
-		add_child(instance)
+		TransitionController.load_puzzle(instance, self)
 	else:
 		print("Ya pulsado")

@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
 [ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Pisadas de prueba.mp3" id="5_xylue"]
 
-[node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3", "footsteps_sfx") groups=["RoomController"]]
+[node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3", "arrow_room1_bloqued", "arrow_room2_bloqued", "footsteps_sfx") groups=["RoomController"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,6 +17,8 @@ script = ExtResource("1_vsvp5")
 room1 = NodePath("Room1")
 room2 = NodePath("Room2")
 room3 = NodePath("Room3")
+arrow_room1_bloqued = NodePath("Room1/ChangeRoomButtons/ArrowButton")
+arrow_room2_bloqued = NodePath("Room2/ChangeRoomButtons/ArrowButton")
 footsteps_sfx = NodePath("Footsteps")
 
 [node name="Room1" type="Control" parent="." unique_id=1379833664]

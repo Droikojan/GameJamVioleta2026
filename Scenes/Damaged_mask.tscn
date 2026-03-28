@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://dwnj0q5qgh848"]
+
+[ext_resource type="Script" uid="uid://fff713v6jakg" path="res://Scripts/Damaged_mask.gd" id="1_jn33m"]
+[ext_resource type="Shader" uid="uid://cxyoug7k246ee" path="res://Shaders/Shader.gdshader" id="1_xfir3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jn33m"]
+shader = ExtResource("1_xfir3")
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/radius = 1.5000000712500001
+shader_parameter/pixel_size = 1.0
+shader_parameter/resolution = Vector2(400, 400)
+shader_parameter/dither_offset = Vector2(2, 0)
+shader_parameter/bayer_size = 2
+shader_parameter/interpolate = true
+shader_parameter/invert = true
+shader_parameter/falloff = 2.5
+shader_parameter/color = Color(0.1254902, 0, 0, 0.5058824)
+
+[sub_resource type="Animation" id="Animation_kddoc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5000000712500001]
+}
+
+[sub_resource type="Animation" id="Animation_xsb4c"]
+resource_name = "appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5000000712500001, 0.59600002831]
+}
+
+[sub_resource type="Animation" id="Animation_n6h5h"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.59600002831, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_jn33m"]
+resource_name = "idle"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.59600002831, 0.70000003325, 0.59600002831]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kddoc"]
+_data = {
+&"RESET": SubResource("Animation_kddoc"),
+&"appear": SubResource("Animation_xsb4c"),
+&"close": SubResource("Animation_n6h5h"),
+&"idle": SubResource("Animation_jn33m")
+}
+
+[node name="DamagedMask" type="CanvasLayer" unique_id=983563274]
+script = ExtResource("1_jn33m")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=197847206]
+material = SubResource("ShaderMaterial_jn33m")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1997994165]
+libraries/ = SubResource("AnimationLibrary_kddoc")

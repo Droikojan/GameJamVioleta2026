@@ -4,6 +4,64 @@
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_66ino"]
 
+[sub_resource type="Animation" id="Animation_ijnfq"]
+resource_name = "ClosePuzzle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.078431375, 0.078431375, 0.078431375, 0), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_close_puzzle"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_bnqan"]
+resource_name = "LoadPuzzle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.078431375, 0.078431375, 0.078431375, 0), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 1), Color(0.078431375, 0.078431375, 0.078431375, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_load_puzzle"
+}]
+}
+
 [sub_resource type="Animation" id="Animation_a77ny"]
 length = 0.001
 tracks/0/type = "value"
@@ -50,6 +108,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bnqan"]
 _data = {
+&"ClosePuzzle": SubResource("Animation_ijnfq"),
+&"LoadPuzzle": SubResource("Animation_bnqan"),
 &"RESET": SubResource("Animation_a77ny"),
 &"Transition": SubResource("Animation_66ino")
 }

@@ -58,6 +58,9 @@ offset_right = 277.0
 offset_bottom = 233.0
 text = "D"
 
+[node name="FailedSound" type="AudioStreamPlayer" parent="." unique_id=1862192133]
+bus = &"SFX"
+
 [connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
 [connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]
 [connection signal="pressed" from="Buttons/ButtonC" to="." method="_on_button_c_pressed"]

@@ -23,9 +23,11 @@ buses/default_bus_layout="uid://bwy54midfpcmv"
 [autoload]
 
 ConfigSave="*uid://dj8cjpcka4kuo"
+DamagedMask="*uid://dwnj0q5qgh848"
 TextBox="*uid://278qpy833fp0"
 MenuSettings="*uid://bvkj4058hj6yn"
 TransitionController="*uid://whvhm1d6ko2g"
+GameController="*uid://qflim7jgufrl"
 
 [display]
 
