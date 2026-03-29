@@ -1,0 +1,68 @@
+[
+	{
+		"texto": "Ay...tsk, mi cabeza...",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Intenta levantarse torpemente",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Por qué está tan oscuro?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡Ouch!",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Mi cabeza no para de darme vueltas. Que mareo…",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Vale...céntrate,céntrate...…¿Por qué estoy aquí? ¿Qué es este lugar?.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Me escuchará alguien si grito?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡¿HOLA?! ¡¿HAY ALGUIEN?!…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": " … … … … … … … … … … … … …",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Parece… que estoy sola… ¿Hm?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Creo que hay algo en la oscuridad",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	}
+]

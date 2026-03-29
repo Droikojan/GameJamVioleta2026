@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cow3mdict3hp4"]
 
 [ext_resource type="Script" uid="uid://2fm06glygmkg" path="res://Scripts/Level.gd" id="1_vsvp5"]
-[ext_resource type="Texture2D" uid="uid://b0bdhlaacf4on" path="res://Assets/Images/Room1/Bg+cadáveres.PNG" id="2_133si"]
+[ext_resource type="Texture2D" uid="uid://b0bdhlaacf4on" path="res://Assets/Images/Room1/Bg+cadáveres.png" id="2_133si"]
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
 [ext_resource type="Texture2D" uid="uid://dle0h0ofw8yg8" path="res://Assets/Images/Room1/Cadáveres invisibles.PNG" id="4_esopp"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
 [ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
 [ext_resource type="Texture2D" uid="uid://dawej3jdhkle0" path="res://Assets/Images/Room1/Cadáveres.PNG" id="5_b10nm"]
-[ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Pisadas de prueba.mp3" id="5_xylue"]
+[ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Footsteps in a hallway.mp3" id="5_xylue"]
 [ext_resource type="Texture2D" uid="uid://bvkla0l2rs18s" path="res://Assets/Images/Room1/Cadáver invisible.PNG" id="6_fhlu0"]
 [ext_resource type="Texture2D" uid="uid://d2cu0lnhwqul5" path="res://Assets/Images/Room1/Cadáver.PNG" id="7_bktio"]
 [ext_resource type="Texture2D" uid="uid://cjn5kj4opbgf5" path="res://Assets/Images/Room1/Llaves invisibles.png" id="8_b10nm"]
@@ -29,6 +29,7 @@ arrow_room2_bloqued = NodePath("Room2/ChangeRoomButtons/ArrowButton")
 footsteps_sfx = NodePath("Footsteps")
 
 [node name="Room1" type="Control" parent="." unique_id=1379833664]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,6 +73,8 @@ offset_right = 999.0
 offset_bottom = 1001.0
 texture_normal = ExtResource("6_fhlu0")
 texture_hover = ExtResource("7_bktio")
+dialog_id_before = "dialogo_room1_clickCuerpos"
+dialog_id_after = "dialogo_room1_puzzleMordida"
 
 [node name="ImageButton3" parent="Room1" unique_id=816790764 instance=ExtResource("4_fuudy")]
 layout_mode = 0
@@ -82,6 +85,7 @@ offset_bottom = 881.0
 texture_normal = ExtResource("8_b10nm")
 texture_hover = ExtResource("9_fhlu0")
 puzzle_scene_route = "res://Scenes/Puzzles/puzzle_2.tscn"
+dialog_id_after = "dialogo_room1_puzzleLlaves"
 
 [node name="ChangeRoomButtons" type="Control" parent="Room1" unique_id=1215421090]
 anchors_preset = 0
@@ -98,7 +102,6 @@ scale = Vector2(4, 4)
 next_room = 2
 
 [node name="Room2" type="Control" parent="." unique_id=1734503929]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -129,6 +132,10 @@ offset_left = 607.0
 offset_top = 169.0
 offset_right = 801.0
 offset_bottom = 363.0
+texture_normal = ExtResource("7_bktio")
+texture_hover = ExtResource("7_bktio")
+puzzle_scene_route = "res://Scenes/Puzzles/puzzle_3.tscn"
+dialog_id_after = "dialogo_room2_puzzleLaberinto"
 
 [node name="ImageButton2" parent="Room2" unique_id=1112729211 instance=ExtResource("4_fuudy")]
 layout_mode = 0

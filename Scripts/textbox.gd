@@ -30,16 +30,17 @@ func _ready() -> void:
 
 func _load_dialog(dialogCode: String) -> void:
 	# Cargar el JSON de textos
-	if dialogCode == "dialogo1":
-		load_texts("res://Diagolos/dialogos.json")
-	if dialogCode == "dialogo2":
-		load_texts("res://Diagolos/dialogos.json")
-	if dialogCode == "dialogo3":
-		load_texts("res://Diagolos/dialogos.json")
-	if dialogCode == "dialogo_fallo":
-		load_texts("res://Diagolos/dialogo_fallo.json")
-	if dialogCode == "dialogo_game_over":
-		load_texts("res://Diagolos/dialogo_game_over.json")
+	load_texts("res://Diagolos/"+dialogCode+".json")
+	#if dialogCode == "dialogo1":
+		#load_texts("res://Diagolos/dialogos.json")
+	#if dialogCode == "dialogo2":
+		#load_texts("res://Diagolos/dialogos.json")
+	#if dialogCode == "dialogo3":
+		#load_texts("res://Diagolos/dialogos.json")
+	#if dialogCode == "dialogo_fallo":
+		#load_texts("res://Diagolos/dialogo_fallo.json")
+	#if dialogCode == "dialogo_game_over":
+		#load_texts("res://Diagolos/dialogo_game_over.json")
 
 	current_index = 0
 	show_next_textbox()

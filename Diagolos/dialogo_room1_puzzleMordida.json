@@ -1,0 +1,28 @@
+[
+	{
+		"texto": "¿Un mordisco?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "Mostrar_imagen_mordisco1"
+	},
+	{
+		"texto": "¿Un animal ha hecho esto? ¿Cómo?…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "Ocultar_imagen_mordisco1"
+	},
+		{
+		"texto": "No es una mordida muy grande que digamos… Algo me dice que debería averiguarlo.
+		 Así podría tener una idea de que o quién puede ser el responsable de esta barbarie.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Vale...debo fijarme bien en la herida para no equivocarme. ¿Y estos incisivos? 
+	¿Humano o animal? Hmm…... Debo elegir bien",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "mostrar_imagen_puzzle1"
+	}
+]

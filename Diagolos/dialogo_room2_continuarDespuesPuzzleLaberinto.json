@@ -1,0 +1,26 @@
+[
+	{
+		"texto": "... ¡Click!...",
+		"status": "normal",
+		"sound": "mostrar_sonido_puerta",
+		"imagen": "no"
+	},
+	{
+		"texto": "Woaah… Qué brisa tan refrescante",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "… un momento…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¿Brisa?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	}
+]

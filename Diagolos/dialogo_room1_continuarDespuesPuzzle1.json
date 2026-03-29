@@ -1,0 +1,140 @@
+[
+	{
+		"texto": "Llena de confusión, se aleja un poco del cadáver y siente algo en su mano",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¿Qué demonios es esto?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "En su mano derecha se encuentra un trozo de papel roto. Parece una foto",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "mostrar_imagen_trozo1"
+	},
+	{
+		"texto": "Está incompleta… Por un momento, al ver este cacho,
+		 he tenido la sensación de recordar algo… pero nada más.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Suspira pesadamente",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Tengo la cabeza rota…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Bueno, lo guardaré de todas formas.
+		 A lo mejor encuentro el resto y así descubro de qué trata esta foto.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "ocultar_imagen_trozo1"
+	},
+	{
+		"texto": "HAS OBTENIDO TROZO DE PAPEL 1",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¡BUUM! ¡CRAC!",
+		"status": "normal",
+		"sound": "mostrar_sonido_estruendoso",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡¿Qué ha sido eso?!",
+		"status": "normal",
+		"sound": "fin_sonido_estruendoso1",
+		"imagen": "no"
+	},
+	{
+		"texto": "Se gira alarmada por el estruendoso sonido.
+		Al cabo de un rato no se vuelve a oír nada más",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "... Qué susto... Parece que algo ha explotado en algún lugar... 
+		Dios, ha sonado tan cerca... Me tiemblan las manos.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Se abraza a sí misma para intentar calmarse del susto y, de paso, 
+		abrigarse un poco del frío",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Oh?… ¿Eso de ahí es una puerta?…",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Se acerca a lo que parece una cómoda. Tras ella, parece que hay una puerta",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¡Sí, es una puerta! ¿Cómo no la he visto?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": " Solo tengo que apartar esta cómoda. Vamos allá.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Con gran esfuerzo, rueda la cómoda a un lado, consiguiendo tener acceso a la puerta tras ella. 
+		Pero al intentar abrirla, está cerrada",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Ya me lo podía imaginar: cerrada. ¡Ay, qué tonta! Buff...",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Resopla. Con rabia, da una patada al suelo y golpea algo",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡Pum!",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "mostrar_sonido_choque"
+	},
+	{
+		"texto": "Vaya, he pateado algo… ¿Qué es esto?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	}
+]

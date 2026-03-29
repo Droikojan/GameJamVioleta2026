@@ -1,0 +1,160 @@
+[
+	{
+		"texto": "¡Sí, lo conseguí! ¡Menos mal que he podido salir de ahí! Me estaba empezando a agobiar…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Y además, he encontrado otro trozo de fotografía…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "mostrar_imagen_trozo2"
+	},
+	{
+		"texto": "HAS OBTENIDO TROZO 2",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Aunque aún no puedo saber muy bien de qué trata la foto…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "ocultar_imagen_trozo2"
+	},
+	{
+		"texto": "No sé si soy yo, pero cada vez esto se vuelve más raro… Siento que mi cabeza está mucho mejor, pero…",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "No soy capaz de reconocer algo de este lugar... ¿Me... habrán secuestrado?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Observa a su alrededor.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Tengo miedo… Siento una sensación como… si mi cuerpo me quisiera advertir de algo",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Aquí está más oscuro y está todo tirado por el suelo.",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Qué habrá pasado?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Pero claro está, sigue siendo mejor estar aquí que estar... cerca de esos cadáveres",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Demonios… Si al menos hubiera una ventana.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Estaré en un búnker o algo así? ¿Cómo es posible?…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Camina con cautela por el lugar",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Mi cabeza ya no duele tanto. Aunque sigo sin recordar nada,
+		 al menos puedo pensar con más claridad",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Parece que este pasillo es bastante largo, pero creo que es la oscuridad la que me engaña… Hmm.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "Es verdad que hace frío, uno que te hiela los huesos... 
+		pero cómo me gustaría sentir una pizca de brisa de aire fresco ahora mismo y...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Sentir que no estoy atrapada...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Suspira profundamente.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Cómo podré salir de aquí?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Bueno, con preguntas no solucionaré nada. ¡Necesito respuestas antes que preguntas!",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "Es un poco lioso...debo elegir con cuidado el camino correcto. Será mejor no fallar.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "procede_puzzle3"
+	},
+	{
+		"texto": "... ¡Click!...",
+		"status": "normal",
+		"sound": "mostrar_sonido_puerta",
+		"imagen": "no"
+	},
+	{
+		"texto": "Woaah… Qué brisa tan refrescante",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "… un momento…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¿Brisa?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	}
+]

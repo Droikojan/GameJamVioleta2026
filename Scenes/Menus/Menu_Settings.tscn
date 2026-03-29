@@ -61,7 +61,7 @@ offset_left = -268.0
 offset_top = -80.0
 offset_right = -217.0
 offset_bottom = -57.0
-scale = Vector2(4, 4)
+scale = Vector2(3, 3)
 theme_override_fonts/font = ExtResource("4_er6eu")
 text = "MUSIC"
 
@@ -80,7 +80,7 @@ offset_left = -268.0
 offset_top = 39.0
 offset_right = -228.0
 offset_bottom = 62.0
-scale = Vector2(4, 4)
+scale = Vector2(3, 3)
 theme_override_fonts/font = ExtResource("4_er6eu")
 text = "SFX"
 

@@ -1,0 +1,174 @@
+[
+	{
+		"texto": "Inhala profundamente",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "Huele a hierba húmeda… Lo conseguí.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡He salido! ¡Estoy fuera!",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Llena de euforia, pisa la hierba con fuerza, la toca, la huele otra vez…",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡Increíble! ¿Quién diría que estaría tan contenta de tocar un poco de césped?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Sintiéndose más aliviada, se centra en su entorno y observa el prado en la oscuridad de la noche.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "No tengo ni idea de dónde estoy… ¿Qué debería hacer?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "A lo lejos, se divisan lo que parecen rascacielos. Lo que parecían nubes no lo eran,
+		sino diversas columnas de humo que venían directamente de esa supuesta ciudad.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "No puede ser. Entonces... ¿una guerra?",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿Cómo? ¿Por qué?… Pero… no tiene sentido...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¿No tengo a dónde ir? ¿No hay nadie? ...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Algo abatida, se sienta en la hierba, agotada por todas estas emociones que suben y bajan.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Entre la hierba, se divisa algo blanco. 
+		Al cogerlo, es uno de los trozos faltantes de la fotografía misteriosa.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "HAS OBTENIDO TROZO DE PAPEL 3",
+		"status": "ACCION",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡Oh! ¿Eso es lo que creo que es? Otro más...
+		 ¿Quién lo iba a decir? Puede que al final, complete esta misteriosa fotografía.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Ahora que me fijo… en esta foto hay algo que me resulta familiar.",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "Pero parece que mi cabeza se bloquea…",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Es... ¡tsk!... el dolor… ha vuelto…",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡¡¡¡!!!!",
+		"status": "accion",
+		"sound": "mostrar_sonido_gritosarmas",
+		"imagen": "imagen_interferencias"
+	},
+		{
+		"texto": "¡Ahg!… ¡Basta!… ¡El dolor es insoportable! ¡Nooo!…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Se sujeta la cabeza con fuerza.",
+		"status": "normal",
+		"sound": "fin_sonido_gritosarmas",
+		"imagen": "ocultar_imagen_interferencia"
+	},
+	{
+		"texto": "… … … … … … … … … …",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Soy yo.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Observa la arrugada foto una vez más.",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "mostrar_imagen_completa"
+	},
+		{
+		"texto": "… … … … … … … … … … … … … …",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "La de la foto soy yo…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "Ocultar_imagen_completa"
+	},
+	{
+		"texto": "S-soy…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "¿Un monstruo?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	
+]

@@ -1,0 +1,109 @@
+[
+	{
+		"texto": "¡Dios mío! Eso...e-eso son… ¡Cadáveres!",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Se paraliza",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "No puedo moverme. Esto es horrible. ¿Quién ha podido hacer algo así? ¿Yo he sobrevivido a esto? 
+		¿Seguirá aquí el culpable?
+		 ¡¿Me habrá escuchado cuando grité?!...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡Ahg! ¿Por qué no recuerdo nada? Mi cabeza quiere explotar cada vez que lo intento…
+		¡Basta! ¡Basta!...",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "… … … … … ... … … … … …",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Estoy sola…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Susurra entre sollozos",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no se ve nada, pausa para hacer que pase el tiempo"
+	},
+	{
+		"texto": "Brr... qué frío",
+		"status": "pensar",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "No puedo seguir así... debo hacer algo. Me niego a aceptar que estoy atrapada con...",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Suspira",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Cada vez que los veo me da escalofríos…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Observa los cadáveres más detenidamente",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "¡No! No hay tiempo para tener miedo. A lo mejor alguno de ellos puede tener la respuesta que busco…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Con paso lento se acerca a los cadáveres. 
+		Estos se van visualizando mejor y se puede notar que están uniformados militarmente.
+		 Sin tocar a ninguno, se agacha junto al cadáver más separado del montón",
+		"status": "accion",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Está lleno de sangre…",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	},
+	{
+		"texto": "Un momento… ¿Eso es…?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	}
+]

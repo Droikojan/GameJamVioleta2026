@@ -1,0 +1,21 @@
+[
+	{
+		"texto": "¿Llaves?...",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "mostrar_imagen_llaves"
+	},
+	{
+		"texto": "¿Una de estas podría ser la clave que necesito para abrir la puerta?",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "ocultar_imagen_llaves"
+	},
+	{
+		"texto": "Debería tener cuidado; tiene pinta de que, si me equivoco, esta cerradura vieja se romperá.
+		 No me gustaría quedarme atrapada aquí para siempre.",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	}
+]
