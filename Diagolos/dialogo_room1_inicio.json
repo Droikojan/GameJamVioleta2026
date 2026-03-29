@@ -2,13 +2,13 @@
 	{
 		"texto": "Ay...tsk, mi cabeza...",
 		"status": "normal",
-		"sound": "no",
+		"sound": "dolor_cabeza",
 		"imagen": "no"
 	},
 	{
 		"texto": "Intenta levantarse torpemente",
 		"status": "accion",
-		"sound": "no",
+		"sound": "parar_dolor_cabeza",
 		"imagen": "no"
 	},
 	{

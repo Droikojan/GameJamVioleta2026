@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://c473k352je11" path="res://Scenes/ArrowButton.tscn" id="3_8rbpu"]
 [ext_resource type="Texture2D" uid="uid://dle0h0ofw8yg8" path="res://Assets/Images/Room1/Cadáveres invisibles.PNG" id="4_esopp"]
 [ext_resource type="PackedScene" uid="uid://bugrl264ax7s1" path="res://Scenes/ImageButton.tscn" id="4_fuudy"]
-[ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_xylue"]
 [ext_resource type="Texture2D" uid="uid://dawej3jdhkle0" path="res://Assets/Images/Room1/Cadáveres.PNG" id="5_b10nm"]
 [ext_resource type="AudioStream" uid="uid://xqjyl4oq84gs" path="res://Assets/SFX/Footsteps in a hallway.mp3" id="5_xylue"]
 [ext_resource type="Texture2D" uid="uid://bvkla0l2rs18s" path="res://Assets/Images/Room1/Cadáver invisible.PNG" id="6_fhlu0"]
@@ -15,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cb2ehj08nipn" path="res://Assets/Images/Room2/Habitación 2.PNG" id="11_nrlyp"]
 [ext_resource type="Texture2D" uid="uid://bqq0fi88ujewk" path="res://Assets/Images/Room2/Puerta Invisible.png" id="12_44tr1"]
 [ext_resource type="Texture2D" uid="uid://bxi6lltfs3umk" path="res://Assets/Images/Room2/Puerta1.png" id="13_pmxqn"]
+[ext_resource type="AudioStream" uid="uid://b2r4dusab4pm7" path="res://Assets/SFX/Ambiente.wav" id="14_nrlyp"]
 
 [node name="Level" type="Control" unique_id=1976424114 node_paths=PackedStringArray("room1", "room2", "room3", "arrow_room1_bloqued", "arrow_room2_bloqued", "footsteps_sfx") groups=["RoomController"]]
 layout_mode = 3
@@ -223,11 +223,10 @@ rotation = -3.1415927
 scale = Vector2(4, 4)
 next_room = 2
 
-[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1296551554]
-stream = ExtResource("4_xylue")
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1296551554 groups=["BackgroundMusic"]]
+stream = ExtResource("14_nrlyp")
 autoplay = true
 bus = &"Music"
-parameters/looping = true
 
 [node name="Footsteps" type="AudioStreamPlayer" parent="." unique_id=690003209]
 stream = ExtResource("5_xylue")

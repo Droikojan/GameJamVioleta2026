@@ -10,6 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://ucttdbwu8whf" path="res://Assets/Images/FragmentosDialogo/Pantalla final versión 1.PNG" id="5_4srjn"]
 [ext_resource type="Texture2D" uid="uid://cabbjrbl6dma5" path="res://Assets/Images/FragmentosDialogo/Pantalla final versión 2.PNG" id="5_y7xws"]
 [ext_resource type="Texture2D" uid="uid://b3gmxbx3oh0te" path="res://Assets/Images/FragmentosDialogo/Imagen completa.PNG" id="7_y7xws"]
+[ext_resource type="AudioStream" uid="uid://piv50kw7ie7o" path="res://Assets/SFX/armas.wav" id="11_8exsh"]
+[ext_resource type="AudioStream" uid="uid://oiyq50yb4qbc" path="res://Assets/SFX/ClickPuerta.wav" id="12_ibqwg"]
+[ext_resource type="AudioStream" uid="uid://b3hvh4kekpjyu" path="res://Assets/SFX/dolorcabeza2.wav" id="13_7j2ov"]
+[ext_resource type="AudioStream" uid="uid://bmq8us2i46rdd" path="res://Assets/SFX/Gritos.wav" id="14_pf264"]
+[ext_resource type="AudioStream" uid="uid://btp0s81uikela" path="res://Assets/SFX/Para HAS-OBTENIDO-TROZO.wav" id="15_c6r8h"]
+[ext_resource type="AudioStream" uid="uid://cvf75ep4cr0hx" path="res://Assets/SFX/BookFlip1.mp3" id="16_fp126"]
+[ext_resource type="AudioStream" uid="uid://2bfoqralkqsy" path="res://Assets/SFX/SonidoFinal.wav" id="17_gewge"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g5d5p"]
 texture = ExtResource("2_ail03")
@@ -150,6 +157,34 @@ offset_bottom = 1077.0
 
 [node name="BoomSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1986796147]
 stream = ExtResource("4_ail03")
+bus = &"SFX"
+
+[node name="ArmasSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1713670067]
+stream = ExtResource("11_8exsh")
+bus = &"SFX"
+
+[node name="ClickPuertaSound" type="AudioStreamPlayer" parent="Sounds" unique_id=383119384]
+stream = ExtResource("12_ibqwg")
+bus = &"SFX"
+
+[node name="DolorCabezaSound" type="AudioStreamPlayer" parent="Sounds" unique_id=102086644]
+stream = ExtResource("13_7j2ov")
+bus = &"SFX"
+
+[node name="GritosSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1255881576]
+stream = ExtResource("14_pf264")
+bus = &"SFX"
+
+[node name="HasObtenidoSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1019094580]
+stream = ExtResource("15_c6r8h")
+bus = &"SFX"
+
+[node name="SacarImagenSound" type="AudioStreamPlayer" parent="Sounds" unique_id=388314232]
+stream = ExtResource("16_fp126")
+bus = &"SFX"
+
+[node name="SonidoFinalSound" type="AudioStreamPlayer" parent="Sounds" unique_id=2044803481]
+stream = ExtResource("17_gewge")
 bus = &"SFX"
 
 [connection signal="pressed" from="ClickAreaButtons/Button" to="." method="_on_button_pressed"]

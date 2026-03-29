@@ -3,17 +3,22 @@
 [ext_resource type="Script" uid="uid://d2gessginbpmo" path="res://Scripts/Menu/MenuController.gd" id="1_cc1hs"]
 [ext_resource type="Texture2D" uid="uid://lyrk5rufx4o6" path="res://Assets/Images/Room1/Bg.PNG" id="2_crq1h"]
 [ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="3_pap8f"]
+[ext_resource type="AudioStream" uid="uid://cmfrc862jvyk8" path="res://Assets/Music/Musica de prueba.ogg" id="4_ygsdb"]
+[ext_resource type="FontFile" uid="uid://jwkwyxy7d47m" path="res://Assets/Fonts/CrayonLibreItalic-8OVdB.ttf" id="5_7b6m2"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pap8f"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3ulik"]
 load_path = "res://.godot/imported/Texturelabs_Grunge_241M.jpg-7cb3cf949fc995e4d5f82c48117a6d88.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ygsdb"]
-texture = SubResource("CompressedTexture2D_pap8f")
+texture = SubResource("CompressedTexture2D_3ulik")
 texture_margin_top = 3.0
 texture_margin_bottom = 3.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qtwnu"]
+load_path = "res://.godot/imported/Texturelabs_Grunge_241M.jpg-7cb3cf949fc995e4d5f82c48117a6d88.ctex"
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7b6m2"]
-texture = SubResource("CompressedTexture2D_pap8f")
+texture = SubResource("CompressedTexture2D_qtwnu")
 texture_margin_top = 3.0
 texture_margin_bottom = 3.0
 
@@ -69,19 +74,35 @@ scale = Vector2(2.925, 2.925)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
 theme_override_styles/normal = SubResource("StyleBoxTexture_ygsdb")
-text = "PLAY"
+text = "INICIAR"
 
 [node name="SettingsButton" type="Button" parent="Default/VBoxContainer" unique_id=1341623010]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
 theme_override_styles/normal = SubResource("StyleBoxTexture_7b6m2")
-text = "SETTINGS"
+text = "OPCIONES"
 
 [node name="CredditsButton" type="Button" parent="Default/VBoxContainer" unique_id=2139743210]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_pap8f")
 theme_override_styles/normal = SubResource("StyleBoxTexture_7b6m2")
-text = "CREDITS"
+text = "CRÉDITOS"
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=1392536793]
+stream = ExtResource("4_ygsdb")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=545822847]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 130.0
+offset_right = 1030.0
+offset_bottom = 307.0
+theme_override_fonts/normal_font = ExtResource("5_7b6m2")
+theme_override_font_sizes/normal_font_size = 140
+text = "FAULT  ERA"
 
 [connection signal="pressed" from="Default/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="Default/VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]

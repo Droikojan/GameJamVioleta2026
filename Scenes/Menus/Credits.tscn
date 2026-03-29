@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhe7km0kos48h" path="res://Scripts/Menu/Credits.gd" id="1_h41mv"]
 [ext_resource type="FontFile" uid="uid://b80ee12u7dseg" path="res://Assets/Fonts/CrayonLibre-BLVel.ttf" id="2_da514"]
+[ext_resource type="Texture2D" uid="uid://lyrk5rufx4o6" path="res://Assets/Images/Room1/Bg.PNG" id="2_s3uxa"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pap8f"]
 load_path = "res://.godot/imported/Texturelabs_Grunge_241M.jpg-7cb3cf949fc995e4d5f82c48117a6d88.ctex"
@@ -20,6 +21,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h41mv")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2107954920]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_s3uxa")
+
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=285198298]
 layout_mode = 1
 anchors_preset = 8
@@ -28,45 +38,68 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -443.0
-offset_top = -161.0
+offset_top = -377.0
 offset_right = 443.0
-offset_bottom = 161.0
+offset_bottom = 235.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_da514")
-text = "Based on an idea of ____
+theme_override_font_sizes/normal_font_size = 40
+text = "BASADO LIBREMENTE EN
+IDEA \"THE HUNTERS\" DE LOS ALUMNOS DE IES MARÍA PEREZ TRUJILLO TENERIFE
 
 
-Art
-____
+ARTE
+Bita
 
-Programming
-____
-____
+PROGRAMACIÓN
+Gini Dev
+IrisClay
 
-Music
-_____
+Historia
+IrisClay
 
-SFX
-____"
-fit_content = true
+SONIDOS
+SonifoFinal: OSFX
+https://freesound.org/people/OSFX/sounds/404023/
+
+SonidoHas-Obtenido-Trozo: SilverIlusionist
+https://freesound.org/people/SilverIllusionist/sounds/667844/
+
+SonidoArmas: C-V
+https://freesound.org/people/C-V/sounds/640721/
+
+SonidoGritos: Moulaythami
+https://freesound.org/people/Moulaythami/sounds/548377/
+
+SonidoPasosCorriendo: holisoysilvi
+https://freesound.org/people/holisoysilvi/sounds/610170/
+
+SonidoDolorCabeza: tosha73
+https://freesound.org/people/tosha73/sounds/521721/
+
+SonidoError: qubodup
+https://freesound.org/people/qubodup/sounds/722378/
+
+SonidoClickPuerta: Pepe827
+https://freesound.org/people/Pepe827/sounds/596871/
+
+SonidoAmbiente: Matio888
+https://freesound.org/people/Matio888/sounds/793481/"
 horizontal_alignment = 1
 
-[node name="ReturnButton" type="Button" parent="." unique_id=293300238]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -64.0
-offset_top = 260.0
-offset_right = 64.0
-offset_bottom = 291.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1479803738]
+layout_mode = 0
+offset_left = 1326.0
+offset_top = 832.99994
+offset_right = 1408.0
+offset_bottom = 933.99994
+scale = Vector2(2.925, 2.925)
+
+[node name="ReturnButton" type="Button" parent="VBoxContainer" unique_id=293300238]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_da514")
 theme_override_styles/normal = SubResource("StyleBoxTexture_da514")
-text = "BACK TO MENU"
+text = "VOLVER"
 
-[connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]

@@ -8,7 +8,7 @@
 	{
 		"texto": "Y además, he encontrado otro trozo de fotografía…",
 		"status": "normal",
-		"sound": "no",
+		"sound": "sacar_imagen_trozo",
 		"imagen": "mostrar_imagen_trozo2"
 	},
 	{

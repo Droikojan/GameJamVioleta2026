@@ -13,6 +13,13 @@ var current_index: int = 0
 
 # Nodos de sonidos
 @onready var boom_sound: AudioStreamPlayer = $Sounds/BoomSound
+@onready var armas_sound: AudioStreamPlayer = $Sounds/ArmasSound
+@onready var click_puerta_sound: AudioStreamPlayer = $Sounds/ClickPuertaSound
+@onready var dolor_cabeza_sound: AudioStreamPlayer = $Sounds/DolorCabezaSound
+@onready var gritos_sound: AudioStreamPlayer = $Sounds/GritosSound
+@onready var has_obtenido_sound: AudioStreamPlayer = $Sounds/HasObtenidoSound
+@onready var sacar_imagen_sound: AudioStreamPlayer = $Sounds/SacarImagenSound
+@onready var sonido_final_sound: AudioStreamPlayer = $Sounds/SonidoFinalSound
 
 # Nodos de imagen
 @onready var image_1: TextureRect = $Images/Image1
@@ -109,8 +116,39 @@ func show_textbox(next_text, status = "normal", sound = "no", imagen = "no"):
 		start = ""
 		end = ""
 	
-	if (sound == 'sonido1'):
+	if (sound == 'mostrar_sonido_estruendoso'):
 		boom_sound.play()
+	
+	if (sound == 'mostrar_sonido_choque'):
+		boom_sound.play()
+	
+	if (sound == 'mostrar_sonido_puerta'):
+		click_puerta_sound.play()
+	
+	if (sound == 'sacar_imagen_trozo'):
+		sacar_imagen_sound.play()
+	
+	if (sound == 'armas'):
+		armas_sound.play()
+	
+	if (sound == 'mostrar_sonido_gritosarmas'):
+		gritos_sound.play()
+	
+	if (sound == 'fin_sonido_gritosarmas'):
+		gritos_sound.stop()
+	
+	if (sound == 'dolor_cabeza'):
+		dolor_cabeza_sound.play()
+	
+	if (sound == 'parar_dolor_cabeza'):
+		dolor_cabeza_sound.stop()
+	
+	if (sound == 'musica_final'):
+		get_tree().get_first_node_in_group("BackgroundMusic").stop()
+		sonido_final_sound.play()
+	
+	if (sound == 'parar_musica_final'):
+		sonido_final_sound.stop()
 	
 	if (imagen == 'mostrar_imagen_trozo1'):
 		fade_in_image(image_1)

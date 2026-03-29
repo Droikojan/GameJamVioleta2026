@@ -3,12 +3,16 @@
 [ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_hdfy2"]
 [ext_resource type="Texture2D" uid="uid://btyk1nwbb3bj5" path="res://Assets/Images/PuzzleLaberinto/Puzzle_visual.PNG" id="2_hsig7"]
 [ext_resource type="Texture2D" uid="uid://cnylywvwod6xa" path="res://Assets/Images/PuzzleLaberinto/Respuesta.PNG" id="3_bl36l"]
+[ext_resource type="AudioStream" uid="uid://bo6xv8m4redgw" path="res://Assets/SFX/Error1.wav" id="4_xdbeh"]
+[ext_resource type="AudioStream" uid="uid://cvf75ep4cr0hx" path="res://Assets/SFX/BookFlip1.mp3" id="5_xddlb"]
 
-[node name="Puzzle3" type="CanvasLayer" unique_id=760514330 node_paths=PackedStringArray("respuesta")]
+[node name="Puzzle3" type="CanvasLayer" unique_id=760514330 node_paths=PackedStringArray("win_sound", "fail_sound", "respuesta")]
 layer = 0
 script = ExtResource("1_hdfy2")
 puzzle_id = 3
 dialog_id = "dialogo_room2_finPuzzleLaberinto"
+win_sound = NodePath("WinSound")
+fail_sound = NodePath("FailSound")
 respuesta = NodePath("Respuesta")
 
 [node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
@@ -62,6 +66,13 @@ text = "D"
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("3_bl36l")
+
+[node name="FailSound" type="AudioStreamPlayer" parent="." unique_id=2019672566]
+stream = ExtResource("4_xdbeh")
+bus = &"SFX"
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=1451806652]
+stream = ExtResource("5_xddlb")
 
 [connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
 [connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]

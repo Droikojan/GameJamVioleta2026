@@ -51,7 +51,7 @@
 	{
 		"texto": "No puede ser. Entonces... ¿una guerra?",
 		"status": "pensar",
-		"sound": "no",
+		"sound": "armas",
 		"imagen": "no"
 	},
 	{
@@ -82,7 +82,7 @@
 	{
 		"texto": "HAS OBTENIDO TROZO DE PAPEL 3",
 		"status": "ACCION",
-		"sound": "no",
+		"sound": "sacar_imagen_trozo",
 		"imagen": "mostrar_imagen_trozo3"
 	},
 	{
@@ -107,7 +107,13 @@
 	{
 		"texto": "Es... ¡tsk!... el dolor… ha vuelto…",
 		"status": "pensar",
-		"sound": "no",
+		"sound": "dolor_cabeza",
+		"imagen": "no"
+	},
+	{
+		"texto": "...",
+		"status": "pensar",
+		"sound": "parar_dolor_cabeza",
 		"imagen": "no"
 	},
 	{
@@ -143,13 +149,13 @@
 	{
 		"texto": "Observa la arrugada foto una vez más.",
 		"status": "accion",
-		"sound": "no",
+		"sound": "sacar_imagen_trozo",
 		"imagen": "mostrar_imagen_6"
 	},
 		{
 		"texto": "… … … … … … … … … … … … … …",
 		"status": "normal",
-		"sound": "no",
+		"sound": "musica_final",
 		"imagen": "no"
 	},
 	{
@@ -174,6 +180,12 @@
 		"texto": "...",
 		"status": "normal",
 		"sound": "no",
+		"imagen": "no"
+	},
+		{
+		"texto": "...",
+		"status": "normal",
+		"sound": "parar_musica_final",
 		"imagen": "no"
 	}
 	

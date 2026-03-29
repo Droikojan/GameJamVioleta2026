@@ -14,7 +14,7 @@
 	{
 		"texto": "En su mano derecha se encuentra un trozo de papel roto. Parece una foto",
 		"status": "accion",
-		"sound": "no",
+		"sound": "sacar_imagen_trozo",
 		"imagen": "mostrar_imagen_trozo1"
 	},
 	{

@@ -9,11 +9,15 @@
 [ext_resource type="Texture2D" uid="uid://v41y0wxeu3i2" path="res://Assets/Images/PuzzleCerradura/Llave3 invisible.png" id="7_kpvkf"]
 [ext_resource type="Texture2D" uid="uid://fsaotrmm4q17" path="res://Assets/Images/PuzzleCerradura/Llave3.png" id="8_lumi7"]
 [ext_resource type="Texture2D" uid="uid://dkbllw0jw5eah" path="res://Assets/Images/PuzzleCerradura/Referencia.PNG" id="9_v7b3l"]
+[ext_resource type="AudioStream" uid="uid://bo6xv8m4redgw" path="res://Assets/SFX/Error1.wav" id="10_mclum"]
+[ext_resource type="AudioStream" uid="uid://cvf75ep4cr0hx" path="res://Assets/SFX/BookFlip1.mp3" id="11_o06nr"]
 
-[node name="Puzzle2" type="CanvasLayer" unique_id=760514330]
+[node name="Puzzle2" type="CanvasLayer" unique_id=760514330 node_paths=PackedStringArray("win_sound", "fail_sound")]
 layer = 0
 script = ExtResource("1_m6eup")
 puzzle_id = 2
+win_sound = NodePath("WinSound")
+fail_sound = NodePath("FailSound")
 
 [node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
 anchors_preset = 15
@@ -70,6 +74,13 @@ offset_bottom = 40.0
 [node name="Llaves" type="Sprite2D" parent="." unique_id=1350330410]
 position = Vector2(960, 543)
 texture = ExtResource("9_v7b3l")
+
+[node name="FailSound" type="AudioStreamPlayer" parent="." unique_id=679009405]
+stream = ExtResource("10_mclum")
+bus = &"SFX"
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=874372675]
+stream = ExtResource("11_o06nr")
 
 [connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
 [connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]

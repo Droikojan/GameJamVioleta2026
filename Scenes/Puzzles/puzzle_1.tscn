@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cr2rhwn3qdjfa" path="res://Assets/Images/PuzzleMordida/Ficha3.png" id="5_jua6k"]
 [ext_resource type="Texture2D" uid="uid://665qvstcy4es" path="res://Assets/Images/PuzzleMordida/Ficha3 invisible.png" id="7_hgpwj"]
 [ext_resource type="AudioStream" uid="uid://cvf75ep4cr0hx" path="res://Assets/SFX/BookFlip1.mp3" id="9_746lf"]
+[ext_resource type="AudioStream" uid="uid://bo6xv8m4redgw" path="res://Assets/SFX/Error1.wav" id="9_hgpwj"]
 
 [node name="Puzzle1" type="CanvasLayer" unique_id=760514330 node_paths=PackedStringArray("win_sound", "fail_sound")]
 layer = 0
@@ -68,6 +69,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="FailSound" type="AudioStreamPlayer" parent="." unique_id=1862192133]
+stream = ExtResource("9_hgpwj")
 bus = &"SFX"
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=120001957]
