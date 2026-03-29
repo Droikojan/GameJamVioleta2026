@@ -83,7 +83,7 @@
 		"texto": "HAS OBTENIDO TROZO DE PAPEL 3",
 		"status": "ACCION",
 		"sound": "no",
-		"imagen": "no"
+		"imagen": "mostrar_imagen_trozo3"
 	},
 	{
 		"texto": "¡Oh! ¿Eso es lo que creo que es? Otro más...
@@ -102,7 +102,7 @@
 		"texto": "Pero parece que mi cabeza se bloquea…",
 		"status": "pensar",
 		"sound": "no",
-		"imagen": "no"
+		"imagen": "ocultar_imagen_trozo3"
 	},
 	{
 		"texto": "Es... ¡tsk!... el dolor… ha vuelto…",
@@ -144,7 +144,7 @@
 		"texto": "Observa la arrugada foto una vez más.",
 		"status": "accion",
 		"sound": "no",
-		"imagen": "mostrar_imagen_completa"
+		"imagen": "mostrar_imagen_6"
 	},
 		{
 		"texto": "… … … … … … … … … … … … … …",
@@ -156,7 +156,7 @@
 		"texto": "La de la foto soy yo…",
 		"status": "normal",
 		"sound": "no",
-		"imagen": "Ocultar_imagen_completa"
+		"imagen": "Ocultar_imagen_6"
 	},
 	{
 		"texto": "S-soy…",
@@ -168,7 +168,13 @@
 		"texto": "¿Un monstruo?",
 		"status": "normal",
 		"sound": "no",
-		"imagen": "no"
+		"imagen": "mostrar_imagen_completa"
 	},
+		{
+		"texto": "...",
+		"status": "normal",
+		"sound": "no",
+		"imagen": "no"
+	}
 	
 ]

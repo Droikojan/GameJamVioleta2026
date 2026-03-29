@@ -7,6 +7,8 @@ extends CanvasLayer
 @export var win_sound : AudioStreamPlayer = null
 @export var fail_sound : AudioStreamPlayer = null
 
+@export var respuesta : Sprite2D = null
+
 var puzzle_finished := false
 
 func _on_button_a_pressed() -> void:
@@ -15,6 +17,8 @@ func _on_button_a_pressed() -> void:
 	puzzle_finished = true
 	if win_sound != null:
 		win_sound.play()
+	if respuesta != null:
+		respuesta.show()
 	GameController._puzzle_finished(puzzle_id)
 	_close_puzzle()
 

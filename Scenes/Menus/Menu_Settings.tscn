@@ -15,20 +15,23 @@ settings_button = NodePath("SettingsButton")
 settings = NodePath("Settings")
 
 [node name="SettingsButton" type="TextureButton" parent="." unique_id=1703985869]
+modulate = Color(1, 1, 1, 0.62352943)
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -80.0
-offset_top = 18.0
-offset_right = -40.0
-offset_bottom = 58.0
+offset_left = -110.99988
+offset_top = 41.0
+offset_right = -70.99988
+offset_bottom = 81.0
 grow_horizontal = 0
+scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("2_0mkol")
 texture_hover = ExtResource("3_dlm11")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Settings" type="Control" parent="." unique_id=1190990996]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -94,15 +97,17 @@ max_value = 1.0
 step = 0.1
 
 [node name="BackButton" type="TextureButton" parent="Settings" unique_id=644329420]
+modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 857.0
-offset_top = -502.0
-offset_right = 897.0
-offset_bottom = -462.0
+offset_left = 827.0
+offset_top = -477.0
+offset_right = 867.0
+offset_bottom = -437.0
 grow_horizontal = 0
+scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("4_dlm11")
 texture_hover = ExtResource("5_er6eu")
 ignore_texture_size = true

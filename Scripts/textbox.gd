@@ -18,6 +18,9 @@ var current_index: int = 0
 @onready var image_1: TextureRect = $Images/Image1
 @onready var image_2: TextureRect = $Images/Image2
 @onready var image_3: TextureRect = $Images/Image3
+@onready var image_4: TextureRect = $Images/Image4
+@onready var image_5: TextureRect = $Images/Image5
+@onready var image_6: TextureRect = $Images/Image6
 
 signal finish_textbox
 
@@ -27,6 +30,9 @@ func _ready() -> void:
 	fade_out_image(image_1)
 	fade_out_image(image_2)
 	fade_out_image(image_3)
+	fade_out_image(image_4)
+	fade_out_image(image_5)
+	fade_out_image(image_6)
 
 func _load_dialog(dialogCode: String) -> void:
 	# Cargar el JSON de textos
@@ -106,12 +112,41 @@ func show_textbox(next_text, status = "normal", sound = "no", imagen = "no"):
 	if (sound == 'sonido1'):
 		boom_sound.play()
 	
-	if (imagen == 'mostrar_imagen1'):
+	if (imagen == 'mostrar_imagen_trozo1'):
 		fade_in_image(image_1)
 	
-	if (imagen == 'ocultar_imagen1'):
+	if (imagen == 'ocultar_imagen_trozo1'):
 		fade_out_image(image_1)
 	
+	if (imagen == 'mostrar_imagen_trozo2'):
+		fade_in_image(image_2)
+	
+	if (imagen == 'ocultar_imagen_trozo2'):
+		fade_out_image(image_2)
+	
+	if (imagen == 'mostrar_imagen_trozo3'):
+		fade_in_image(image_3)
+	
+	if (imagen == 'ocultar_imagen_trozo3'):
+		fade_out_image(image_3)
+	
+	if (imagen == 'mostrar_imagen4'):
+		fade_in_image(image_4)
+	
+	if (imagen == 'ocultar_imagen4'):
+		fade_out_image(image_4)
+	
+	if (imagen == 'imagen_interferencias'):
+		fade_in_image(image_5)
+	
+	if (imagen == 'ocultar_imagen_interferencia'):
+		fade_out_image(image_5)
+	
+	if (imagen == 'mostrar_imagen_completa'):
+		fade_in_image(image_4)
+	
+	if (imagen == 'mostrar_imagen_6'):
+		fade_in_image(image_6)
 	
 	# Escibir el texto actual
 	textbox.text = start + textbox.text + end

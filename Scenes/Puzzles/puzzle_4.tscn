@@ -1,19 +1,15 @@
 [gd_scene format=3 uid="uid://bbayyogm6njli"]
 
 [ext_resource type="Script" uid="uid://bcsbhw0fk135b" path="res://Scripts/Puzzles/puzzle_1.gd" id="1_hdfy2"]
+[ext_resource type="Texture2D" uid="uid://btyk1nwbb3bj5" path="res://Assets/Images/PuzzleLaberinto/Puzzle_visual.PNG" id="2_hsig7"]
+[ext_resource type="Texture2D" uid="uid://cnylywvwod6xa" path="res://Assets/Images/PuzzleLaberinto/Respuesta.PNG" id="3_bl36l"]
 
-[node name="Puzzle2" type="CanvasLayer" unique_id=760514330]
+[node name="Puzzle3" type="CanvasLayer" unique_id=760514330 node_paths=PackedStringArray("respuesta")]
 layer = 0
 script = ExtResource("1_hdfy2")
-puzzle_id = 2
-
-[node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.67064744, 0.87105584, 0.7356984, 1)
+puzzle_id = 3
+dialog_id = "dialogo_room2_finPuzzleLaberinto"
+respuesta = NodePath("Respuesta")
 
 [node name="Imagen" type="TextureRect" parent="." unique_id=1235923621]
 anchors_preset = 15
@@ -21,6 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_hsig7")
 
 [node name="Buttons" type="Control" parent="." unique_id=1864772190]
 layout_mode = 3
@@ -30,35 +27,41 @@ offset_bottom = 40.0
 
 [node name="ButtonA" type="Button" parent="Buttons" unique_id=1939611361]
 layout_mode = 0
-offset_left = 836.0
-offset_top = 477.0
-offset_right = 855.0
-offset_bottom = 508.0
+offset_left = 551.0
+offset_top = 205.0
+offset_right = 587.0
+offset_bottom = 264.0
 text = "A"
 
 [node name="ButtonB" type="Button" parent="Buttons" unique_id=1091045370]
 layout_mode = 0
-offset_left = 971.0
-offset_top = 493.0
-offset_right = 990.0
-offset_bottom = 524.0
+offset_left = 931.0
+offset_top = 198.0
+offset_right = 968.0
+offset_bottom = 263.0
 text = "B"
 
 [node name="ButtonC" type="Button" parent="Buttons" unique_id=1520056540]
 layout_mode = 0
-offset_left = 834.0
-offset_top = 589.0
-offset_right = 853.0
-offset_bottom = 620.0
+offset_left = 1313.0
+offset_top = 197.0
+offset_right = 1349.0
+offset_bottom = 260.0
 text = "C"
 
 [node name="ButtonD" type="Button" parent="Buttons" unique_id=1479469494]
+visible = false
 layout_mode = 0
 offset_left = 974.0
 offset_top = 608.0
 offset_right = 994.0
 offset_bottom = 639.0
 text = "D"
+
+[node name="Respuesta" type="Sprite2D" parent="." unique_id=1796904524]
+visible = false
+position = Vector2(960, 540)
+texture = ExtResource("3_bl36l")
 
 [connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
 [connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]
