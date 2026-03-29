@@ -29,7 +29,6 @@ arrow_room2_bloqued = NodePath("Room2/ChangeRoomButtons/ArrowButton")
 footsteps_sfx = NodePath("Footsteps")
 
 [node name="Room1" type="Control" parent="." unique_id=1379833664]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -102,6 +101,7 @@ scale = Vector2(4, 4)
 next_room = 2
 
 [node name="Room2" type="Control" parent="." unique_id=1734503929]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

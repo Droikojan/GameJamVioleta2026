@@ -53,3 +53,5 @@ func _change_room(next_room : int) -> void:
 		if room3_enter == false:
 			room3_enter = true
 			TextBox._load_dialog("dialogo_room3_inicio")
+			await TextBox.finish_textbox
+			TransitionController.load_level("uid://5ok4y36qvqnn")
