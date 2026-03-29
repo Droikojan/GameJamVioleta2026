@@ -5,7 +5,7 @@
 [node name="Puzzle2" type="CanvasLayer" unique_id=760514330]
 layer = 0
 script = ExtResource("1_mw4np")
-puzzle_id = 2
+puzzle_id = 3
 dialog_next_id = "dialogo_room2_continuarDespuesPuzzleLaberinto"
 
 [node name="BORRAR Y PONER IMAGEN" type="ColorRect" parent="." unique_id=396330223]

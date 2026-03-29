@@ -27,7 +27,7 @@ func _process(_delta: float) -> void:
 		arrow_room1_bloqued.hide()
 	else:
 		arrow_room1_bloqued.show()
-	if GameController.puzzle1_finished == false:
+	if GameController.puzzle1_finished == false or GameController.puzzle3_finished == false:
 		arrow_room2_bloqued.hide()
 	else:
 		arrow_room2_bloqued.show()
